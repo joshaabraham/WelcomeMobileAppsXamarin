@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="23">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="22">
+            <objects>
+                <viewController id="23" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="20"/>
+                        <viewControllerLayoutGuide type="bottom" id="21"/>
+                    </layoutGuides>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="32" key="view" image="bg_splash.jpg">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                        <variation key="heightClass=regular-widthClass=regular" image="bg_splash.jpg"/>
+                    </imageView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="25" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="85"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash.png" width="274" height="83"/>
+        <image name="bg_lci.jpg" width="2048" height="1536"/>
+        <image name="generic_bg_image.jpg" width="375" height="667"/>
+        <image name="hamburguer_icon.png" width="18" height="12"/>
+        <image name="LCI_Logo.png" width="326" height="320"/>
+        <image name="login_bg.jpg" width="375" height="667"/>
+        <image name="login_bg_tablet.jpg" width="1024" height="1024"/>
+        <image name="logo.png" width="64" height="64"/>
+        <image name="pass_recovery_bg.jpg" width="371.5" height="661"/>
+        <image name="pass_recovery_bg_tablet.jpg" width="1024" height="1024"/>
+        <image name="signup_bg.jpg" width="371.5" height="661"/>
+        <image name="social_header_bg_0.jpg" width="375" height="366"/>
+        <image name="social_header_bg_1.jpg" width="371.5" height="362.5"/>
+        <image name="user_profile_0.jpg" width="102" height="102"/>
+        <image name="user_profile_1.jpg" width="100" height="100"/>
+        <image name="walkthrough_generic_phone_bg.png" width="375" height="667"/>
+        <image name="welcome_bg.jpg" width="375" height="667"/>
+        <image name="welcome_bg_tablet.jpg" width="1024" height="1024"/>
+        <image name="bg_splash.jpg" width="1024" height="1024"/>
+        <image name="bg_lci_vancouver.jpg" width="2048" height="1536"/>
+        <image name="bg_lci_design.jpg" width="2048" height="1536"/>
+        <image name="bg_lci_intl.jpg" width="2048" height="1536"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="iPad"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MobileApps.Views.Navigation.SubViews.LeadExistsPromptView" xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared" xmlns:local="clr-namespace:MobileApps;assembly=EventAndKioskAppMobileApps">
+    <ContentView.Content>
+        <StackLayout>
+            <!--CLAIM TEXT-->
+            <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center" Padding="{ artina:OnOrientationDouble
+				        	Default=40,
+				        	PortraitTablet=40,
+				        	LandscapeTablet=40 }">
+
+                <Label LineBreakMode="WordWrap" Text="We have found an account with the name asssociated with this email." Font="Helvetica" TextColor="{ DynamicResource OverImageTextColor }" VerticalTextAlignment="Center" FontAttributes="Bold" AbsoluteLayout.LayoutFlags="All">
+                    <Label.FontSize>
+                        <OnIdiom x:TypeArguments="x:Double"
+				        			     Phone="15"
+				        			     Tablet="26"/>
+                    </Label.FontSize>
+                </Label>
+                <Label LineBreakMode="WordWrap" Text="Is this you?" Font="Helvetica" TextColor="{ DynamicResource OverImageTextColor }" VerticalTextAlignment="Center" FontAttributes="Bold" AbsoluteLayout.LayoutFlags="All">
+                    <Label.FontSize>
+                        <OnIdiom x:TypeArguments="x:Double"
+				        			     Phone="15"
+				        			     Tablet="26"/>
+                    </Label.FontSize>
+                </Label>
+                <Label LineBreakMode="WordWrap" Text="Test" Font="Helvetica" TextColor="{ DynamicResource OverImageTextColor }" VerticalTextAlignment="Center" FontAttributes="Bold" AbsoluteLayout.LayoutFlags="All">
+                    <Label.FontSize>
+                        <OnIdiom x:TypeArguments="x:Double"
+				        			     Phone="22"
+				        			     Tablet="20"/>
+                    </Label.FontSize>
+                </Label>
+            </StackLayout>
+
+            <StackLayout
+                                 Orientation="Horizontal"
+				        	     HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                >
+                <artina:Button Style="{DynamicResource SaveButtonStyle}" Text="Yes" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200"/>
+                <artina:Button Style="{DynamicResource DeleteButtonStyle}" Text="No" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

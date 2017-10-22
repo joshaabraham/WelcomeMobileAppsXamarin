@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="MobileApps.Views.Navigation.MasterPage" 
+    BackgroundImage="{ DynamicResource WelcomeBackgroundImage }" 
+    BackgroundColor="{ DynamicResource ComplementColor }" 
+    xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" 
+    xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared" 
+    xmlns:local="clr-namespace:MobileApps;assembly=EventAndKioskAppMobileApps">
+    <!-- MAIN CONTAINER-->
+    <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand">
+
+        <!---BACKGROUND IMAGE -->
+        <Image x:Name="BackgroundImage" Style="{DynamicResource WelcomeBackgroundImageMontreal}" />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <!--THE FIRST ROW IS RESERVED FOR ORGANIZATIONAL BRANDING / HEADER-->
+                <RowDefinition Height="9*" />
+                <!--THE SECOND ROW CONTAINS ALL CONTENT | DYNAMIC VIEWS-->
+                <RowDefinition Height="Auto" />
+                <!--THE THIRD ROW CONTAINS COPYRIGHT DISCLAIMERS-->
+            </Grid.RowDefinitions>
+                <!-- Second Column Primary Content -->
+                <StackLayout
+                    Grid.Row="1"
+                    x:Name="DynamicView" 
+                    Margin="0,20,0,0" 
+                    HorizontalOptions="CenterAndExpand" 
+                    Orientation="Horizontal" 
+                    Spacing="10">
+                    <!-- ********************** SUB-VIEWS SHOULD BE INSERTED HERE ********************** -->
+                </StackLayout>
+            
+                <AbsoluteLayout
+                    Grid.Row="1"
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="EndAndExpand">
+                    <Button
+                    x:Name="HomeIcon"
+                    TextColor="#ff4c4c"
+                    Command="{Binding NavVm.SessionTimeoutCommand}"
+                    IsVisible="false"
+                    FontSize="80"
+                    FontFamily="grialshapes"
+                    AbsoluteLayout.LayoutBounds="0.1, 0.4, 0.5, 0.1"
+                    AbsoluteLayout.LayoutFlags="All">
+                    <Button.Triggers>
+                        <DataTrigger TargetType="Button" Binding="{Binding NavVm.ShowReturnIcon}" Value="True">
+                        <Setter Property="IsVisible" Value="True"/>
+                        </DataTrigger>
+                        </Button.Triggers>
+                </Button>
+    </AbsoluteLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

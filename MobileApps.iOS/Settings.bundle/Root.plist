@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>Application Settings</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Event Mode</string>
+			<key>Key</key>
+			<string>enabled_eventMode</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Organizational Settings</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>chosenOrganizationKey</string>
+			<key>Title</key>
+			<string>Organization</string>
+			<key>Titles</key>
+			<array>
+				<string>Montreal</string>
+				<string>Colombia</string>
+				<string>Mexico</string>
+				<string>Spain</string>
+				<string>Maghreb</string>
+				<string>Indonesian</string>
+				<string>Australia</string>
+			</array>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Values</key>
+			<array>
+				<string>Montreal</string>
+				<string>Colombia</string>
+				<string>Mexico</string>
+				<string>Spain</string>
+				<string>Maghreb</string>
+				<string>Indonesian</string>
+				<string>Australia</string>
+			</array>
+			<key>DefaultValue</key>
+			<string>Montreal</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>logoChosenKey</string>
+			<key>Title</key>
+			<string>Logo</string>
+			<key>Titles</key>
+			<array>
+				<string>Montreal Logo</string>
+				<string>Vancouver Logo</string>
+				<string>International Logo</string>
+				<string>Academy of Design Logo</string>
+			</array>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Values</key>
+			<array>
+				<string>WelcomeBackgroundImageMontreal</string>
+				<string>WelcomeBackgroundImageVancouver</string>
+				<string>WelcomeBackgroundImageInternational</string>
+				<string>WelcomeBackgroundImageDesign</string>
+			</array>
+			<key>DefaultValue</key>
+			<string>WelcomeBackgroundImageMontreal</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Language Settings</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<string>English</string>
+			<key>Key</key>
+			<string>languageOneKey</string>
+			<key>Title</key>
+			<string>Language One</string>
+			<key>Titles</key>
+			<array>
+				<string>English</string>
+				<string>French</string>
+				<string>Spanish</string>
+				<string>Catalan</string>
+				<string>Indonesian</string>
+			</array>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Values</key>
+			<array>
+				<string>English</string>
+				<string>French</string>
+				<string>Spanish</string>
+				<string>Catalan</string>
+				<string>Indonesian</string>
+			</array>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<string>French</string>
+			<key>Key</key>
+			<string>languageTwoKey</string>
+			<key>Title</key>
+			<string>Language Two</string>
+			<key>Titles</key>
+			<array>
+				<string>English</string>
+				<string>French</string>
+				<string>Spanish</string>
+				<string>Catalan</string>
+				<string>Indonesian</string>
+			</array>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Values</key>
+			<array>
+				<string>English</string>
+				<string>French</string>
+				<string>Spanish</string>
+				<string>Catalan</string>
+				<string>Indonesian</string>
+			</array>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<string>Spanish</string>
+			<key>Key</key>
+			<string>languageThreeKey</string>
+			<key>Title</key>
+			<string>Language Three</string>
+			<key>Titles</key>
+			<array>
+				<string>English</string>
+				<string>French</string>
+				<string>Spanish</string>
+				<string>Catalan</string>
+				<string>Indonesian</string>
+			</array>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Values</key>
+			<array>
+				<string>English</string>
+				<string>French</string>
+				<string>Spanish</string>
+				<string>Catalan</string>
+				<string>Indonesian</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Advanced Settings</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<string>Walk-In - Montreal</string>
+			<key>Key</key>
+			<string>QueueOptionsKey</string>
+			<key>Title</key>
+			<string>CRM Queue</string>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<string>kiosk.collegelasalle.com</string>
+			<key>Key</key>
+			<string>CRMURLKey</string>
+			<key>Title</key>
+			<string>CRM URL</string>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Update Databases</string>
+			<key>Key</key>
+			<string>enabled_refreshData</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>

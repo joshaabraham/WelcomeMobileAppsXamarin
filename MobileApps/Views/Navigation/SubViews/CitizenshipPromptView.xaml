@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MobileApps.Views.Navigation.SubViews.CitizenshipPromptView" xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared" xmlns:local="clr-namespace:MobileApps;assembly=EventAndKioskAppMobileApps">
+    <ContentView.Content>
+        <!--CLAIM TEXT-->
+        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="{ artina:OnOrientationDouble
+				        	Default=40,
+				        	PortraitTablet=40,
+				        	LandscapeTablet=40 }">
+
+            <Label LineBreakMode="WordWrap" Text="Citizenship" Font="Helvetica" TextColor="{ DynamicResource OverImageTextColor }" VerticalTextAlignment="Center" FontAttributes="Bold" AbsoluteLayout.LayoutFlags="All">
+                <Label.FontSize>
+                    <OnIdiom x:TypeArguments="x:Double"
+				        			     Phone="26"
+				        			     Tablet="36"/>
+                </Label.FontSize>
+            </Label>
+
+            <StackLayout VerticalOptions="StartAndExpand" Margin="0,35,0,0">
+
+                <!---ListView-->
+                <ListView x:Name="listViewCitizenship" SelectedItem="{Binding KioskApp.CitizenshipVm.CitizenshipChosen, Mode=TwoWay}" Style="{DynamicResource CardViewStyle}" SeparatorColor="Transparent" ItemsSource="{Binding KioskApp.CitizenshipVm.CitizenshipOptions}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <StackLayout Padding="10" Spacing="10" HorizontalOptions="Start">
+                                        <Label HorizontalOptions="Center" Font="Helvetica" Text="{Binding}" Style="{DynamicResource MainMenuLabelStyle}" FontAttributes="Bold" TextColor="White" />
+                                    </StackLayout>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            <Label HorizontalOptions="Center" Text="{Binding KioskApp.CitizenshipVm.ValidationMessage}" Style="{DynamicResource ValidationEntryErrorStyle}" />
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

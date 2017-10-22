@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	xmlns:converter="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared.Base"
+	xmlns:local="clr-namespace:MobileApps;assembly=EventAndKioskAppMobileApps"
+	x:Class="MobileApps.Badge"
+	x:Name="Root">
+	
+	<ContentView.Resources>
+		<ResourceDictionary>
+			<converter:IsNotStringEmptyConverter
+				x:Key="isBadgeVisibleConverter" />
+		</ResourceDictionary>
+	</ContentView.Resources>	
+
+	<ContentView.Content>
+		<AbsoluteLayout
+			IsVisible="{Binding Source={x:Reference Root}, Path=BadgeText, Converter={StaticResource isBadgeVisibleConverter}}">
+			<Label
+				FontSize="28"
+				Text="{ x:Static local:GrialShapesFont.Circle }"
+				TextColor="{Binding Source={x:Reference Root}, Path=BadgeBackgroundColor}"
+				Style="{StaticResource FontIconBase}"
+				HorizontalTextAlignment="Center"
+				VerticalTextAlignment="Center"
+				AbsoluteLayout.LayoutBounds="0,0,28,28"
+			/>
+
+			<Label 
+				Text="{Binding Source={x:Reference Root}, Path=BadgeText}" 
+				TextColor="{Binding Source={x:Reference Root}, Path=BadgeTextColor}" 
+				HorizontalTextAlignment="Center" 
+				VerticalTextAlignment="Center"
+				FontSize="12" 
+				FontAttributes="Bold" 
+				AbsoluteLayout.LayoutBounds="0,0,28,28"
+			/>
+		</AbsoluteLayout>
+	</ContentView.Content>
+</ContentView>

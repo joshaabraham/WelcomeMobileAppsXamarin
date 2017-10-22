@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:LangResources="clr-namespace:MobileApps.Helpers" x:Class="MobileApps.Views.Navigation.SubViews.ObjectivePromptView" xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared" xmlns:local="clr-namespace:MobileApps;assembly=EventAndKioskAppMobileApps">
+    <ContentView.Content>
+        <StackLayout Margin="30" Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="{ artina:OnOrientationDouble
+                            Default=15,
+                            PortraitTablet=15,
+                            LandscapeTablet=15 }">
+            <!--OBJECTIVE VIEW TITLE-->
+            <Label LineBreakMode="WordWrap" Text="{x:Static LangResources:AppResourcesEN.ObjectivePageTitle}" Font="Helvetica" TextColor="{ DynamicResource OverImageTextColor }" VerticalTextAlignment="Center" FontAttributes="Bold" AbsoluteLayout.LayoutFlags="All">
+                <!--TRANSLATION LOGIC-->
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Fr">
+                        <Setter Property="Text" Value="{x:Static LangResources:AppResourcesFR.ObjectivePageTitle}"/>
+                    </DataTrigger>
+                    <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Es">
+                        <Setter Property="Text" Value="{x:Static LangResources:AppResourcesES.ObjectivePageTitle}"/>
+                    </DataTrigger>
+                    <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Id">
+                        <Setter Property="Text" Value="{x:Static LangResources:AppResourcesID.ObjectivePageTitle}"/>
+                    </DataTrigger>
+                    <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Ca">
+                        <Setter Property="Text" Value="{x:Static LangResources:AppResourcesCA.ObjectivePageTitle}"/>
+                    </DataTrigger>
+                </Label.Triggers>
+                <Label.FontSize>
+                    <OnIdiom x:TypeArguments="x:Double"
+                                         Phone="26"
+                                         Tablet="36"/>
+                </Label.FontSize>
+            </Label>
+            <BoxView Style="{StaticResource BrandNameOrnamentStyle}" BackgroundColor="{ DynamicResource OverImageTextColor }" />
+            <!-- LISTVIEW OF OBJECTIVES -->
+            <StackLayout VerticalOptions="StartAndExpand" Margin="0,35,0,0">
+                <!--LISTVIEW OF OBJECTIVES-->
+                <ListView x:Name="listViewObjective" SelectedItem="{Binding KioskApp.ObjectiveVm.ObjectiveChosen,Mode=TwoWay}" Style="{DynamicResource CardViewStyle}" SeparatorColor="Transparent" ItemsSource="{Binding KioskApp.ObjectiveVm.ObjectiveOptions}">
+                    <ListView.Triggers>
+                        <DataTrigger TargetType="ListView" Binding="{Binding KioskApp.ObjectiveVm.AwaitingData}" Value="True">
+                            <Setter Property="IsVisible" Value="False" />
+                        </DataTrigger>
+                    </ListView.Triggers>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <StackLayout Padding="10" Spacing="10" HorizontalOptions="Start">
+                                        <Label HorizontalOptions="Center" Font="Helvetica" Text="{Binding Name}" Style="{DynamicResource MainMenuLabelStyle}" FontAttributes="Bold" TextColor="White" />
+                                    </StackLayout>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            <!--UI SPINNER UNTIL DATA IS RETRIVED-->
+            <StackLayout IsVisible="False" Orientation="Vertical" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
+                <StackLayout.Triggers>
+                    <DataTrigger TargetType="StackLayout" Binding="{Binding KioskApp.ObjectiveVm.AwaitingData}" Value="True">
+                        <Setter Property="IsVisible" Value="True" />
+                    </DataTrigger>
+                </StackLayout.Triggers>
+                <ActivityIndicator Color="White" IsRunning="True">
+                    <DataTrigger TargetType="ActivityIndicator" Binding="{Binding KioskApp.ObjectiveVm.AwaitingData}" Value="True">
+                        <Setter Property="IsRunning" Value="True" />
+                    </DataTrigger>
+                </ActivityIndicator>
+                <Label TextColor="White" HorizontalOptions="CenterAndExpand" Text="Retriving Objectives" FontAttributes="Bold" />
+            </StackLayout>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

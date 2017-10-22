@@ -1,0 +1,20 @@
+{
+    "navigationPage": {
+        "all": [true],
+        "exclude": [
+            "WalkthroughFlatStepItemTemplate.xaml",
+	        "WalkthroughGradientItemTemplate.xaml",
+	        "WalkthroughStepItemTemplate.xaml",
+	        "WalkthroughVariantStepItemTemplate.xaml",
+	        "WalkthroughFlatPage.xaml",
+	        "WalkthroughGradientPage.xaml",
+	        "WalkthroughPage.xaml",
+	        "WalkthroughVariantPage.xaml",
+            "LoginPage.xaml",
+            "PasswordRecoveryPage.xaml",
+            "SignUpPage.xaml",
+            "SimpleLoginPage.xaml",
+            "SimpleSignUpPage.xaml"
+		]
+    }
+}

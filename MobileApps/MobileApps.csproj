@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{7041522B-6406-4AA7-8C6D-8AD1661DD392}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MobileApps</RootNamespace>
+    <TargetFrameworkProfile>Profile78</TargetFrameworkProfile>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <AssemblyName>EventAndKioskAppMobileApps</AssemblyName>
+    <ReleaseVersion>1.5</ReleaseVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>
+    </DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AppInitializer.cs" />
+    <Compile Include="Context\KioskApplicationContext.cs" />
+    <Compile Include="DependencyInjection\DependencyInjectionRegister.cs" />
+    <Compile Include="Helpers\ButtonTriggers.cs" />
+    <Compile Include="Helpers\CategorizePrograms.cs" />
+    <Compile Include="Helpers\DeviceTimer.cs" />
+    <Compile Include="Helpers\ImageTriggers.cs" />
+    <Compile Include="Helpers\Navigation.cs" />
+    <Compile Include="DependencyInjection\IDependencyInjectionRegister.cs" />
+    <Compile Include="Helpers\AppResourcesCA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResourcesCA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\AppResourcesEN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResourcesEN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\AppResourcesES.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResourcesES.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\AppResourcesFR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResourcesFR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\AppResourcesID.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResourcesID.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sync\DataSynchronizer.cs" />
+    <Compile Include="Sync\DataSynchronizer-Leads.cs" />
+    <Compile Include="ViewModels\NavigationStateViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="Views\Common\BrandBlock.xaml.cs">
+      <DependentUpon>BrandBlock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\Badge.xaml.cs">
+      <DependentUpon>Badge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\CircleIcon.xaml.cs">
+      <DependentUpon>CircleIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\CustomActivityIndicator.xaml.cs">
+      <DependentUpon>CustomActivityIndicator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\RoundedLabel.xaml.cs">
+      <DependentUpon>RoundedLabel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\GrialShapesFont.cs" />
+    <Compile Include="Helpers\FontawesomeFont.cs" />
+    <Compile Include="Helpers\IoniciconsFont.cs" />
+    <Compile Include="Properties\AssemblyGlobal.cs" />
+    <Compile Include="Views\Navigation\CustomControls\CheckItem.cs" />
+    <Compile Include="Views\Navigation\CustomControls\SelectMultipleBasePage.cs" />
+    <Compile Include="Views\Navigation\MasterPage.xaml.cs">
+      <DependentUpon>MasterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\SubViews\AcknowledgementView.xaml.cs">
+      <DependentUpon>AcknowledgementView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\SubViews\CampusPromptView.xaml.cs">
+      <DependentUpon>CampusPromptView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\SubViews\CitizenShipCountryPromptView.xaml.cs">
+      <DependentUpon>CitizenShipCountryPromptView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\SubViews\EmailPromptView.xaml.cs">
+      <DependentUpon>EmailPromptView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\SubViews\LanguagePromptView.xaml.cs">
+      <DependentUpon>LanguagePromptView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\SubViews\NamePromptView.xaml.cs">
+      <DependentUpon>NamePromptView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\SubViews\ObjectivePromptView.xaml.cs">
+      <DependentUpon>ObjectivePromptView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\SubViews\ProgramsPromptView.xaml.cs">
+      <DependentUpon>ProgramsPromptView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\SubViews\SettingsView.xaml.cs">
+      <DependentUpon>SettingsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\SubViews\TelephonePromptView.xaml.cs">
+      <DependentUpon>TelephonePromptView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\MyAppTheme.xaml.cs">
+      <DependentUpon>MyAppTheme.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\GrialDarkTheme.xaml.cs">
+      <DependentUpon>GrialDarkTheme.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\GrialLightTheme.xaml.cs">
+      <DependentUpon>GrialLightTheme.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\GrialEnterpriseTheme.xaml.cs">
+      <DependentUpon>GrialEnterpriseTheme.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ValidationMessages\ValidationMessagesCA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>..\..\..\MobileApps.Core\Helpers\ValidationMessages\ValidationMessagesCA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ValidationMessages\ValidationMessagesEN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>..\..\..\MobileApps.Core\Helpers\ValidationMessages\ValidationMessagesEN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ValidationMessages\ValidationMessagesES.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>..\..\..\MobileApps.Core\Helpers\ValidationMessages\ValidationMessagesES.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ValidationMessages\ValidationMessagesFR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>..\..\..\MobileApps.Core\Helpers\ValidationMessages\ValidationMessagesFR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ValidationMessages\ValidationMessagesID.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>..\..\..\MobileApps.Core\Helpers\ValidationMessages\ValidationMessagesID.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainCsPage.cs" />
+    <Compile Include="Views\GoogleProfileCsPage.cs" />
+    <Compile Include="ViewModels\GoogleViewModel.cs" />
+    <Compile Include="ViewModels\AcknowledgementViewModel.cs" />
+    <Compile Include="ViewModels\AggregatedViewModel.cs" />
+    <Compile Include="ViewModels\CampusPromptViewModel.cs" />
+    <Compile Include="ViewModels\CitizenShipCountryPromptViewModel.cs" />
+    <Compile Include="ViewModels\EmailPromptViewModel.cs" />
+    <Compile Include="ViewModels\LanguagePromptViewModel.cs" />
+    <Compile Include="ViewModels\NamePromptViewModel.cs" />
+    <Compile Include="ViewModels\NavigationViewModel.cs" />
+    <Compile Include="ViewModels\ObjectivePromptViewModel.cs" />
+    <Compile Include="ViewModels\ProgramsPromptViewModel.cs" />
+    <Compile Include="ViewModels\SettingsPageViewModel.cs" />
+    <Compile Include="ViewModels\StepOrder.cs" />
+    <Compile Include="ViewModels\SubViewModel.cs" />
+    <Compile Include="ViewModels\TelephonePromptViewModel.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="App.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helpers\AppResourcesCA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResourcesCA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helpers\AppResourcesEN.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResourcesEN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helpers\AppResourcesES.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResourcesES.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helpers\AppResourcesFR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResourcesFR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helpers\AppResourcesID.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResourcesID.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Common\BrandBlock.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Common\Badge.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Common\CircleIcon.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Common\CustomActivityIndicator.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Common\RoundedLabel.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themes\MyAppTheme.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themes\GrialDarkTheme.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themes\GrialLightTheme.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themes\GrialEnterpriseTheme.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helpers\ValidationMessages\ValidationMessagesCA.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ValidationMessagesCA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helpers\ValidationMessages\ValidationMessagesEN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ValidationMessagesEN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helpers\ValidationMessages\ValidationMessagesES.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ValidationMessagesES.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helpers\ValidationMessages\ValidationMessagesFR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ValidationMessagesFR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helpers\ValidationMessages\ValidationMessagesID.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ValidationMessagesID.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\portable-net45+wp80+win8+wpa81+MonoAndroid10+MonoTouch10\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UXDivers.Effects">
+      <HintPath>..\packages\UXDivers.Effects.0.6.0\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\UXDivers.Effects.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading">
+      <HintPath>..\packages\Xamarin.FFImageLoading.2.2.9\lib\portable-net45+win8+wpa81+wp8\FFImageLoading.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading.Platform">
+      <HintPath>..\packages\Xamarin.FFImageLoading.2.2.9\lib\portable-net45+win8+wpa81+wp8\FFImageLoading.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading.Forms">
+      <HintPath>..\packages\Xamarin.FFImageLoading.Forms.2.2.9\lib\portable-net45+win8+wpa81+wp8\FFImageLoading.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading.Transformations">
+      <HintPath>..\packages\Xamarin.FFImageLoading.Transformations.2.2.9\lib\portable-net45+win8+wpa81+wp8\FFImageLoading.Transformations.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Xaml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.0.2\lib\netstandard1.0\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.0.2\lib\netstandard1.0\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Lottie.Forms">
+      <HintPath>..\packages\Com.Airbnb.Xamarin.Forms.Lottie.2.1.0.0\lib\portable-net45+wp8+win+wpa81+dnxcore50\Lottie.Forms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UXDivers.Artina.Shared.Base">
+      <HintPath>..\packages\UXDivers.Artina.Shared.Base.2.0.60\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\UXDivers.Artina.Shared.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="UXDivers.Artina.Shared">
+      <HintPath>..\packages\UXDivers.Artina.Shared.2.0.60\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\UXDivers.Artina.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Validation">
+      <HintPath>..\packages\Validation.2.2.8\lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLCrypto">
+      <HintPath>..\packages\PCLCrypto.2.0.147\lib\portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\PCLCrypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Auth">
+      <HintPath>..\packages\Xamarin.Auth.1.5.0.3\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+XamarinIOS10\Xamarin.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCL.raw">
+      <HintPath>..\packages\SQLitePCL.raw_basic.0.8.6\lib\portable-net45+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCL.raw.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite.Net.Async">
+      <HintPath>..\packages\SQLite.Net.Async-PCL.3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.Async.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite.Net">
+      <HintPath>..\packages\SQLite.Net-PCL.3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="SampleData.json" />
+    <None Include="Gorilla.json" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="assets\bg_video.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MobileApps.BL\MobileApps.BL.csproj">
+      <Project>{52B1001A-82ED-49DD-BC14-48E300E7FCD3}</Project>
+      <Name>MobileApps.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobileApps.Core\MobileApps.Core.csproj">
+      <Project>{E6FD295E-D13D-4BDB-8925-94F4C87A1261}</Project>
+      <Name>MobileApps.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobileApps.DAL\MobileApps.DAL.csproj">
+      <Project>{0B12FC26-B386-44A3-98B0-C02234CB750F}</Project>
+      <Name>MobileApps.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobileApps.Models\MobileApps.Models.csproj">
+      <Project>{CCA1DE26-C4A8-461F-82B6-830984EAFA68}</Project>
+      <Name>MobileApps.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobileApps.Services\MobileApps.Services.csproj">
+      <Project>{fb82b36f-9e81-4f60-9b2d-440a766a8cfb}</Project>
+      <Name>MobileApps.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Navigation\MasterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Navigation\SubViews\EmailPromptView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Navigation\SubViews\LanguagePromptView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Navigation\SubViews\NamePromptView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Navigation\SubViews\ObjectivePromptView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Navigation\SubViews\TelephonePromptView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Navigation\SubViews\AcknowledgementView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Navigation\SubViews\CitizenShipCountryPromptView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Navigation\SubViews\CampusPromptView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Navigation\SubViews\ProgramsPromptView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Navigation\SubViews\SettingsView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helpers\ValidationMessages\" />
+    <Folder Include="assets\" />
+  </ItemGroup>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <Import Project="..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Import Project="..\packages\UXDivers.Artina.Shared.2.0.60\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\UXDivers.Artina.Shared.targets" Condition="Exists('..\packages\UXDivers.Artina.Shared.2.0.60\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\UXDivers.Artina.Shared.targets')" />
+</Project>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MobileApps.Views.Navigation.SubViews.EmailPromptView" xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared" xmlns:LangResources="clr-namespace:MobileApps.Helpers" xmlns:local="clr-namespace:MobileApps;assembly=EventAndKioskAppMobileApps">
+    <ContentView.Content>
+        <!--MAIN CONTAINER-->
+        <Grid>
+            <ScrollView Padding="{ StaticResource MainWrapperPadding }">
+                <!-- MAIN CONTAINER -->
+                <Grid ColumnSpacing="0" RowSpacing="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <!--CLAIM TEXT-->
+                    <StackLayout Grid.Row="1" Spacing="10" Padding="20,10" Orientation="Vertical" VerticalOptions="Center">
+                        <!-- PAGE TITLE -->
+                        <Label LineBreakMode="WordWrap" Text="{x:Static LangResources:AppResourcesEN.EmailMainTitle}" TextColor="{ DynamicResource OverImageTextColor }" VerticalTextAlignment="Center" FontAttributes="Bold" AbsoluteLayout.LayoutFlags="All">
+                            <!-- TRANSLATION LOGIC -->
+                            <Label.Triggers>
+                                <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Fr"> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesFR.EmailMainTitle}"/> </DataTrigger>
+                                <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Es"> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesES.EmailMainTitle}"/> </DataTrigger>
+                                <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Id"> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesID.EmailMainTitle}"/> </DataTrigger>
+                                <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Ca"> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesCA.EmailMainTitle}"/> </DataTrigger>
+                            </Label.Triggers>
+                       <Label.FontSize> 
+                            <OnIdiom x:TypeArguments="x:Double"
+                                     Phone="26"
+                                     Tablet="36"/>
+                                </Label.FontSize>
+                        </Label>
+                        <BoxView Style="{StaticResource BrandNameOrnamentStyle}" BackgroundColor="{DynamicResource OverImageTextColor}" />
+                    </StackLayout>
+                    <!---FIELDS CONTAINER-->
+                    <Grid Padding="20,0" VerticalOptions="CenterAndExpand" HeightRequest="260" Grid.Row="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <StackLayout Grid.Row="0" VerticalOptions="Start">
+                            <!---EMAIL FIELD-->
+                            <Entry HeightRequest="65" Margin="0,0,60,0" Placeholder="{x:Static LangResources:AppResourcesEN.EmailEntryTitle}" Text="{Binding KioskApp.EmailVm.Email}" Style="{StaticResource ArtinaLoginEntryStyle}" Unfocused="EmailFilled">
+                                <Entry.Triggers>
+                                    <DataTrigger TargetType="Entry" Binding="{Binding KioskApp.EmailVm.AwaitingData}" Value="True">
+                                        <Setter Property="IsEnabled" Value="False" />
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Entry" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Fr">
+                                        <Setter Property="Placeholder" Value="{x:Static LangResources:AppResourcesFR.EmailEntryTitle}" />
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Entry" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Es">
+                                        <Setter Property="Placeholder" Value="{x:Static LangResources:AppResourcesES.EmailEntryTitle}" />
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Entry" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Id">
+                                        <Setter Property="Placeholder" Value="{x:Static LangResources:AppResourcesID.EmailEntryTitle}" />
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Entry" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Ca">
+                                        <Setter Property="Placeholder" Value="{x:Static LangResources:AppResourcesCA.EmailEntryTitle}" />
+                                    </DataTrigger>
+                                </Entry.Triggers>
+                            </Entry>
+                              <!--UI SPINNER UNTIL DATA INFO LEAD EXISTS IS CHECKED-->
+                <StackLayout IsVisible="False" Orientation="Vertical" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
+                    <StackLayout.Triggers>
+                        <DataTrigger TargetType="StackLayout" Binding="{Binding KioskApp.EmailVm.AwaitingData}" Value="True">
+                            <Setter Property="IsVisible" Value="True" />
+                        </DataTrigger>
+                    </StackLayout.Triggers>
+                    <ActivityIndicator Color="White" IsRunning="True">
+                        <DataTrigger TargetType="ActivityIndicator" Binding="{Binding KioskApp.EmailVm.AwaitingData}" Value="True">
+                            <Setter Property="IsRunning" Value="True" />
+                        </DataTrigger>
+                    </ActivityIndicator>
+                </StackLayout>
+                            <!-- VALIDATION ERROR MESSAGE -->
+                            <Label Margin="0,40,60,0" Text="{x:Static LangResources:AppResourcesEN.EmailPageError2}" IsVisible="false" Style="{StaticResource ValidationEntryErrorStyle}">
+                                <!-- TRANSLATION LOGIC -->
+                                <Label.Triggers>
+                                <!-- ENGLISH VALIDATION MESSAGES -->
+                                    <MultiTrigger TargetType="Label"> <MultiTrigger.Conditions> <BindingCondition Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="En"/> <BindingCondition Binding="{Binding KioskApp.EmailVm.EmptyOrNullValidation}" Value="false"/> </MultiTrigger.Conditions> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesEN.EmailPageError1}" /> </MultiTrigger>
+                                    <MultiTrigger TargetType="Label"> <MultiTrigger.Conditions> <BindingCondition Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="En"/> <BindingCondition Binding="{Binding KioskApp.EmailVm.FormatValidation}" Value="false"/> </MultiTrigger.Conditions> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesEN.EmailPageError2}" /> </MultiTrigger>
+                                    <!-- FRENCH VALIDATION MESSAGES -->
+                                    <MultiTrigger TargetType="Label"> <MultiTrigger.Conditions> <BindingCondition Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Fr"/> <BindingCondition Binding="{Binding KioskApp.EmailVm.EmptyOrNullValidation}" Value="false"/> </MultiTrigger.Conditions> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesFR.EmailPageError1}" /> </MultiTrigger>
+                                    <MultiTrigger TargetType="Label"> <MultiTrigger.Conditions> <BindingCondition Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Fr"/> <BindingCondition Binding="{Binding KioskApp.EmailVm.FormatValidation}" Value="false"/> </MultiTrigger.Conditions> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesFR.EmailPageError2}" /> </MultiTrigger>    
+                                    <!-- SPANISH VALIDATION MESSAGES -->
+                                    <MultiTrigger TargetType="Label"> <MultiTrigger.Conditions> <BindingCondition Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Es"/> <BindingCondition Binding="{Binding KioskApp.EmailVm.EmptyOrNullValidation}" Value="false"/> </MultiTrigger.Conditions> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesES.EmailPageError1}" /> </MultiTrigger>
+                                    <MultiTrigger TargetType="Label"> <MultiTrigger.Conditions> <BindingCondition Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Es"/> <BindingCondition Binding="{Binding KioskApp.EmailVm.FormatValidation}" Value="false"/> </MultiTrigger.Conditions> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesES.EmailPageError2}" /> </MultiTrigger>
+                                    <!-- INDONESIAN VALIDATION MESSAGES -->
+                                    <MultiTrigger TargetType="Label"> <MultiTrigger.Conditions> <BindingCondition Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Id"/> <BindingCondition Binding="{Binding KioskApp.EmailVm.EmptyOrNullValidation}" Value="false"/> </MultiTrigger.Conditions> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesID.EmailPageError1}" /> </MultiTrigger>
+                                    <MultiTrigger TargetType="Label"> <MultiTrigger.Conditions> <BindingCondition Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Id"/> <BindingCondition Binding="{Binding KioskApp.EmailVm.FormatValidation}" Value="false"/> </MultiTrigger.Conditions> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesID.EmailPageError2}" /> </MultiTrigger>   
+                                    <!-- CATALIAN VALIDATION MESSAGES -->
+                                    <MultiTrigger TargetType="Label"> <MultiTrigger.Conditions> <BindingCondition Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="CA"/> <BindingCondition Binding="{Binding KioskApp.EmailVm.EmptyOrNullValidation}" Value="false"/> </MultiTrigger.Conditions> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesCA.EmailPageError1}" /> </MultiTrigger>
+                                    <MultiTrigger TargetType="Label"> <MultiTrigger.Conditions> <BindingCondition Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Ca"/> <BindingCondition Binding="{Binding KioskApp.EmailVm.FormatValidation}" Value="false"/> </MultiTrigger.Conditions> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesCA.EmailPageError2}" /> </MultiTrigger> 
+                                <!-- LOGIC IF AN ERROR APPEARS -->
+                                <DataTrigger 
+                                        TargetType="Label"
+                                        Binding="{Binding KioskApp.EmailVm.IsValid}" 
+                                        Value="false">
+                                    <Setter 
+                                        Property="IsVisible" 
+                                        Value="true" />
+                                </DataTrigger> 
+                            </Label.Triggers>
+                        </Label>
+                        </StackLayout>
+                        <!-- ELECTRONIC COMMUNICATIONS AGREEMENT DISCLOSURE -->
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Margin="5" Grid.Row="3">
+                            <Label Text="{x:Static LangResources:AppResourcesEN.EmailAgreeTitle}" FontSize="13" TextColor="White">
+                                <Label.Triggers>
+                                    <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Fr"> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesFR.EmailAgreeTitle}"/> </DataTrigger>
+                                    <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Es"> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesES.EmailAgreeTitle}"/> </DataTrigger>
+                                    <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Id"> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesID.EmailAgreeTitle}"/> </DataTrigger>
+                                    <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Ca"> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesCA.EmailAgreeTitle}"/> </DataTrigger>
+                                </Label.Triggers>
+                            </Label>
+                            <Switch IsToggled="{Binding KioskApp.EmailVm.AllowAlerts}" VerticalOptions="Center" />
+                        </StackLayout>
+                    </Grid>
+                </Grid>
+            </ScrollView>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

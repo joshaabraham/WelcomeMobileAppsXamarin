@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CCA1DE26-C4A8-461F-82B6-830984EAFA68}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MobileApps.Models</RootNamespace>
+    <AssemblyName>MobileApps.Models</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile78</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ReleaseVersion>1.5</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Contracts\Repository\API\ICampusAPIRepository.cs" />
+    <Compile Include="Contracts\Repository\API\INationalityAPIRepository.cs" />
+    <Compile Include="Contracts\Repository\API\IInfoLeadAPIRepository.cs" />
+    <Compile Include="Contracts\Repository\API\IObjectiveAPIRepository.cs" />
+    <Compile Include="Contracts\Repository\API\IPotentialStudentAPIRepository.cs" />
+    <Compile Include="Contracts\Repository\API\IProgramsAPIRepository.cs" />
+    <Compile Include="Contracts\Repository\SQLite\ICampusRepository.cs" />
+    <Compile Include="Contracts\Repository\SQLite\INationalityAPIRepository.cs" />
+    <Compile Include="Contracts\Repository\SQLite\IInfoLeadRepository.cs" />
+    <Compile Include="Contracts\Repository\SQLite\IObjectiveRespository.cs" />
+    <Compile Include="Contracts\Repository\SQLite\IPotentialStudentRepository.cs" />
+    <Compile Include="Contracts\Repository\SQLite\IProgramsRepository.cs" />
+    <Compile Include="Contracts\Services\ISyncService.cs" />
+    <Compile Include="Contracts\ViewModel\IStep.cs" />
+    <Compile Include="Models\Campus.cs" />
+    <Compile Include="Models\CitizenShipCountry.cs" />
+    <Compile Include="Models\Country.cs" />
+    <Compile Include="Models\Event.cs" />
+    <Compile Include="Models\InfoLead.cs" />
+    <Compile Include="Models\Objective.cs" />
+    <Compile Include="Models\Organization.cs" />
+    <Compile Include="Models\PotentialStudent.cs" />
+    <Compile Include="Models\PotentialStudentEvent.cs" />
+    <Compile Include="Models\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Contracts\Repository\API\IEventAPIRepository.cs" />
+    <Compile Include="Contracts\Repository\SQLite\IEventRepository.cs" />
+    <Compile Include="Models\Semester.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Contracts\Repository\SQLite\ISemesterRepository.cs" />
+    <Compile Include="Contracts\Repository\API\ISemesterAPIRepository.cs" />
+    <Compile Include="Contracts\Repository\API\IUserAPIRepository.cs" />
+    <Compile Include="Contracts\Repository\SQLite\IUserRepository.cs" />
+    <Compile Include="Models\GoogleProfile.cs" />
+    <Compile Include="Contracts\Repository\API\IPotentialStudentEventAPIRepository.cs" />
+    <Compile Include="Contracts\Repository\SQLite\IPotentialStudentEventRepository.cs" />
+    <Compile Include="Contracts\Services\ICampusDataService.cs" />
+    <Compile Include="Contracts\Services\IEventDataService.cs" />
+    <Compile Include="Contracts\Services\IInfoLeadDataService.cs" />
+    <Compile Include="Contracts\Services\INationalityDataService.cs" />
+    <Compile Include="Contracts\Services\IObjectiveDataService.cs" />
+    <Compile Include="Contracts\Services\IPotentialStudentDataService.cs" />
+    <Compile Include="Contracts\Services\IPotentialStudentEventDataService.cs" />
+    <Compile Include="Contracts\Services\IProgramsDataService.cs" />
+    <Compile Include="Contracts\Services\ISemesterDataService.cs" />
+    <Compile Include="Contracts\Services\IUserDataService.cs" />
+    <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Contracts\Repository\SQLite\IBaseRepo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\portable-net45+win8+wpa81+wp8\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

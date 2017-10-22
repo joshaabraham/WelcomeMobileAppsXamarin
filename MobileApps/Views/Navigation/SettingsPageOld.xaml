@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+             Title="Settings"
+             x:Class="MobileApps.Views.SettingsPage">
+    <ContentPage.Content>
+        <StackLayout 
+			Padding="20" 
+			VerticalOptions="FillAndExpand">
+            <TableView Intent="Settings" VerticalOptions="FillAndExpand">
+                <TableView.Root>
+                    <TableSection Title="Main Settings">
+                        <EntryCell Label="First Contact Option Name: " Placeholder="Enter Here"></EntryCell>
+                        <EntryCell Label="Organization Name: " Placeholder="Enter Here"></EntryCell>
+                        <EntryCell Label="Walk-In Queue Name: " Placeholder="Enter Here"></EntryCell>
+                        <EntryCell Label="API Key: " Placeholder="Enter Here"></EntryCell>
+                        <EntryCell Label="API Server: " Placeholder="Enter Here"></EntryCell>
+                        <EntryCell Label="Quit Email: " Placeholder="Enter Here"></EntryCell>
+                        <EntryCell Label="Inactivity Timeout (seconds): "></EntryCell>
+                    </TableSection>
+                    <TableSection Title="Location">
+                        <EntryCell Label="Location Campus: " Placeholder="Enter Here"></EntryCell>
+                        <EntryCell Label="Location English: " Placeholder="Enter Here"></EntryCell>
+                        <EntryCell Label="Location French: " Placeholder="Enter Here"></EntryCell>
+                        <EntryCell Label="Location Spanish: " Placeholder="Enter Here"></EntryCell>
+                        <ViewCell>
+                            <StackLayout
+                                Padding="15,0,0,0"
+                                 Orientation="Horizontal"
+				        	     HorizontalOptions="FillAndExpand"
+                                 VerticalOptions="Center">
+                                <Label HorizontalOptions="FillAndExpand" VerticalOptions="Center" TextColor="Black">Has Relocation Option:</Label>
+                                <Picker Title="Select Option" HorizontalOptions="EndAndExpand" WidthRequest="300">
+                                    <Picker.Items>
+                                        <x:String>Yes</x:String>
+                                        <x:String>No</x:String>
+                                    </Picker.Items>
+                                </Picker>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout
+                                Padding="15,0,0,0"
+                                 Orientation="Horizontal"
+				        	     HorizontalOptions="FillAndExpand"
+                                 VerticalOptions="Center">
+                                <Label HorizontalOptions="FillAndExpand" VerticalOptions="Center" TextColor="Black">Location Logo:</Label>
+                                <Picker Title="Select Location" HorizontalOptions="EndAndExpand" WidthRequest="300">
+                                    <Picker.Items>
+                                        <x:String>Lasalle College Montreal</x:String>
+                                        <x:String>Lasalle College Vancouver</x:String>
+                                        <x:String>Lasalle College International</x:String>
+                                        <x:String>Academy of Design</x:String>
+                                    </Picker.Items>
+                                </Picker>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Languages">
+                        <ViewCell>
+                            <StackLayout
+                                Padding="15,0,0,0"
+                                 Orientation="Horizontal"
+				        	     HorizontalOptions="FillAndExpand"
+                                 VerticalOptions="Center">
+                                <Label HorizontalOptions="FillAndExpand" VerticalOptions="Center" TextColor="Black">Langauge 1:</Label>
+                                <Picker Title="Select Language" HorizontalOptions="EndAndExpand" WidthRequest="300">
+                                    <Picker.Items>
+                                        <x:String>English</x:String>
+                                        <x:String>French</x:String>
+                                        <x:String>Spanish</x:String>
+                                        <x:String>Catalan</x:String>
+                                        <x:String>Indonesian</x:String>
+                                    </Picker.Items>
+                                </Picker>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout
+                                Padding="15,0,0,0"
+                                 Orientation="Horizontal"
+				        	     HorizontalOptions="FillAndExpand"
+                                 VerticalOptions="Center">
+                                <Label HorizontalOptions="FillAndExpand" VerticalOptions="Center" TextColor="Black">Langauge 2:</Label>
+                                <Picker Title="Select Language" HorizontalOptions="EndAndExpand" WidthRequest="300">
+                                    <Picker.Items>
+                                        <x:String>English</x:String>
+                                        <x:String>French</x:String>
+                                        <x:String>Spanish</x:String>
+                                        <x:String>Catalan</x:String>
+                                        <x:String>Indonesian</x:String>
+                                    </Picker.Items>
+                                </Picker>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout
+                                Padding="15,0,0,0"
+                                 Orientation="Horizontal"
+				        	     HorizontalOptions="FillAndExpand"
+                                 VerticalOptions="Center">
+                                <Label HorizontalOptions="FillAndExpand" VerticalOptions="Center" TextColor="Black">Langauge 3:</Label>
+                                <Picker Title="Select Language" HorizontalOptions="EndAndExpand" WidthRequest="300">
+                                    <Picker.Items>
+                                        <x:String>English</x:String>
+                                        <x:String>French</x:String>
+                                        <x:String>Spanish</x:String>
+                                        <x:String>Catalan</x:String>
+                                        <x:String>Indonesian</x:String>
+                                    </Picker.Items>
+                                </Picker>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                </TableView.Root>
+            </TableView>
+            <artina:Button 
+				Style="{DynamicResource SaveButtonStyle}" 
+				Text="Save Changes and Return" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

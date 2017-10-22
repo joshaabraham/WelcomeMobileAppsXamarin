@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MobileApps.Views.Navigation.SubViews.LanguagePromptView" xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared" xmlns:local="clr-namespace:MobileApps;assembly=EventAndKioskAppMobileApps" xmlns:AppButtonTriggers="clr-namespace:MobileApps.Helpers;assembly=EventAndKioskAppMobileApps">
+    <ContentView.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <!-- INJECT VIDEO HERE - TO IMPLEMENT LATER / VIDEO BACKGROUND -->
+            <WebView IsVisible="false" x:Name="Browser" WidthRequest="2000" HeightRequest="6000" BackgroundColor="Silver" />
+            <!--BUTTONS CONTAINER-->
+            <StackLayout IsVisible="true" Padding="35,250,0,0" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+                <!-- LANGUAGE BUTTON ONE -->
+                <artina:Button Style="{DynamicResource PrimaryActionButtonStyle}" Text="{Binding KioskApp.SettingsVm.SelectedLanguageOne}" Margin="0,0,12,0" WidthRequest="{ artina:OnOrientationDouble
+                                LandscapeTablet=300 }" HorizontalOptions="{ artina:OnOrientationLayoutOptions
+                                PortraitPhone=Center,
+                                LandscapePhone=Center,
+                                PortraitTablet=Center,
+                                LandscapeTablet=Center }" CommandParameter="{Binding KioskApp.SettingsVm.SelectedLanguageOne}" Command="{Binding KioskApp.LanguageVm.SelectLanguageCommand}">
+                </artina:Button>
+                <!-- LANGUAGE BUTTON TWO -->
+                <artina:Button Style="{DynamicResource PrimaryActionButtonStyle}" Text="{Binding KioskApp.SettingsVm.SelectedLanguageTwo}" Margin="12,0,12,0" WidthRequest="{ artina:OnOrientationDouble
+                        LandscapeTablet=300 }" HorizontalOptions="{ artina:OnOrientationLayoutOptions
+                        PortraitPhone=Center,
+                        LandscapePhone=Center,
+                        PortraitTablet=Center,
+                        LandscapeTablet=Center }" CommandParameter="{Binding KioskApp.SettingsVm.SelectedLanguageTwo}" Command="{Binding KioskApp.LanguageVm.SelectLanguageCommand}">
+                </artina:Button>
+                <!-- LANGUAGE BUTTON THREE DISABLED TEMPORARYLY
+                <artina:Button Style="{DynamicResource PrimaryActionButtonStyle}" ClassId="ButtonThree" Text="{Binding KioskApp.SettingsVm.SelectedLanguageThree}" Margin="12,0,0,0" WidthRequest="{ artina:OnOrientationDouble
+                        LandscapeTablet=200 }" HorizontalOptions="{ artina:OnOrientationLayoutOptions
+                        PortraitPhone=Center,
+                        LandscapePhone=Center,
+                        PortraitTablet=Center,
+                        LandscapeTablet=Center }" CommandParameter="{Binding KioskApp.SettingsVm.SelectedLanguageThree}" Command="{Binding KioskApp.LanguageVm.SelectLanguageCommand}">
+                </artina:Button>
+                 -->
+            </StackLayout>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

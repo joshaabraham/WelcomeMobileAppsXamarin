@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="MobileApps.Views.Navigation.SubViews.ProgramsPromptView" 
+    xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" 
+    xmlns:LangResources="clr-namespace:MobileApps.Helpers" 
+    xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared" 
+    xmlns:local="clr-namespace:MobileApps;assembly=EventAndKioskAppMobileApps">
+    <ContentView.Content>
+        <!--CLAIM TEXT-->
+        <StackLayout Margin="0,25,0,0" Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="{ artina:OnOrientationDouble
+                            Default=15,
+                            PortraitTablet=15,
+                            LandscapeTablet=15 }">
+            <!--PROGRAMS VIEW TITLE-->
+            <Label LineBreakMode="WordWrap" Text="{x:Static LangResources:AppResourcesEN.ProgramsPageTitle}" Font="Helvetica" TextColor="{ DynamicResource OverImageTextColor }" VerticalTextAlignment="Center" FontAttributes="Bold" AbsoluteLayout.LayoutFlags="All">
+            <!-- TRANSLATION LOGIC FOR TITLE -->
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Fr">
+                        <Setter Property="Text" Value="{x:Static LangResources:AppResourcesFR.ProgramsPageTitle}"/>
+                    </DataTrigger>
+                    <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Es">
+                        <Setter Property="Text" Value="{x:Static LangResources:AppResourcesES.ProgramsPageTitle}"/>
+                    </DataTrigger>
+                    <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Id">
+                        <Setter Property="Text" Value="{x:Static LangResources:AppResourcesID.ProgramsPageTitle}"/>
+                    </DataTrigger>
+                    <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Ca">
+                        <Setter Property="Text" Value="{x:Static LangResources:AppResourcesCA.ProgramsPageTitle}"/>
+                    </DataTrigger>
+                </Label.Triggers>
+
+                <Label.FontSize>
+                    <OnIdiom x:TypeArguments="x:Double"
+                                         Phone="26"
+                                         Tablet="36"/>
+                </Label.FontSize>
+            </Label>
+            <BoxView Style="{StaticResource BrandNameOrnamentStyle}" BackgroundColor="{ DynamicResource OverImageTextColor }" />
+            <!-- CATEGORY DROPDOWN - VISIBLE IF MORE THEN MORE CATEGORY -->
+            <StackLayout VerticalOptions="StartAndExpand" Margin="0,35,50,0">
+                <StackLayout IsVisible="false" Orientation="Horizontal">
+                    <Label VerticalOptions="Center" Margin="0,0,10,0" Text="{x:Static LangResources:AppResourcesEN.ProgramsCategoryPrompt}">
+                     <!-- TRANSLATION LOGIC FOR Category Question -->
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Fr">
+                        <Setter Property="Text" Value="{x:Static LangResources:AppResourcesFR.ProgramsCategoryPrompt}"/>
+                    </DataTrigger>
+                    <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Es">
+                        <Setter Property="Text" Value="{x:Static LangResources:AppResourcesES.ProgramsCategoryPrompt}"/>
+                    </DataTrigger>
+                    <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Id">
+                        <Setter Property="Text" Value="{x:Static LangResources:AppResourcesID.ProgramsCategoryPrompt}"/>
+                    </DataTrigger>
+                    <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Ca">
+                        <Setter Property="Text" Value="{x:Static LangResources:AppResourcesCA.ProgramsCategoryPrompt}"/>
+                    </DataTrigger>
+                </Label.Triggers>
+                    </Label>
+                    <Picker Title="{x:Static LangResources:AppResourcesEN.ProgramsCategoryPlaceholder}" SelectedItem="{Binding KioskApp.ProgramsVm.CategoryChosen}" HorizontalOptions="FillAndExpand">
+                        <Picker.Triggers>
+                            <!-- TRANSLATION LOGIC FOR Category Question -->
+                                <DataTrigger TargetType="Picker" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Fr">
+                                    <Setter Property="Title" Value="{x:Static LangResources:AppResourcesFR.ProgramsCategoryPlaceholder}"/>
+                                </DataTrigger>
+                                <DataTrigger TargetType="Picker" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Es">
+                                    <Setter Property="Title" Value="{x:Static LangResources:AppResourcesES.ProgramsCategoryPlaceholder}"/>
+                                </DataTrigger>
+                                <DataTrigger TargetType="Picker" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Id">
+                                    <Setter Property="Title" Value="{x:Static LangResources:AppResourcesID.ProgramsCategoryPlaceholder}"/>
+                                </DataTrigger>
+                                <DataTrigger TargetType="Picker" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Ca">
+                                    <Setter Property="Title" Value="{x:Static LangResources:AppResourcesCA.ProgramsCategoryPlaceholder}"/>
+                                </DataTrigger>
+                            <DataTrigger TargetType="Picker" Binding="{Binding KioskApp.ProgramsVm.ShowCategorizer}" Value="True">
+                                <Setter Property="ItemsSource" Value="{Binding KioskApp.ProgramsVm.ProgramCategories}" />
+                            </DataTrigger>
+                        </Picker.Triggers>
+                    </Picker>
+                    <StackLayout.Triggers>
+                        <DataTrigger TargetType="StackLayout" Binding="{Binding KioskApp.ProgramsVm.ShowCategorizer}" Value="True">
+                            <Setter Property="IsVisible" Value="true" />
+                        </DataTrigger>
+                    </StackLayout.Triggers>
+                </StackLayout>
+                <!--LISTVIEW OF PROGRAMS-->
+                <ListView SelectedItem="{Binding KioskApp.ProgramsVm.ProgramChosen, Mode=TwoWay}" Margin="50,5,0,15" Style="{DynamicResource CardViewStyle}" SeparatorColor="Transparent" ItemsSource="{Binding KioskApp.ProgramsVm.ProgramOptions}">
+                    <ListView.Triggers>
+                         <DataTrigger TargetType="ListView" Binding="{Binding KioskApp.SettingsVm.AwaitingData}" Value="True">
+                            <Setter Property="IsVisible" Value="False" />
+                        </DataTrigger>
+                    </ListView.Triggers>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <StackLayout Padding="15,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                                        <StackLayout Padding="10" Spacing="10" HorizontalOptions="Start">
+                                            <StackLayout.Triggers>
+                                                <DataTrigger TargetType="StackLayout" Binding="{Binding KioskApp.ProgramsVm.AwaitingData}" Value="True">
+                                                    <Setter Property="IsVisible" Value="False" />
+                                                </DataTrigger>
+                                            </StackLayout.Triggers>
+                                            <Label HorizontalOptions="Center" Font="Helvetica" Text="{Binding Name}" Style="{DynamicResource MainMenuLabelStyle}" FontAttributes="Bold" TextColor="White" />
+                                        </StackLayout>
+                                    </StackLayout>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <!--UI SPINNER UNTIL DATA IS RETRIVED-->
+                <StackLayout IsVisible="False" Orientation="Vertical" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
+                    <StackLayout.Triggers>
+                        <DataTrigger TargetType="StackLayout" Binding="{Binding KioskApp.ProgramsVm.AwaitingData}" Value="True">
+                            <Setter Property="IsVisible" Value="True" />
+                        </DataTrigger>
+                    </StackLayout.Triggers>
+                    <ActivityIndicator Color="White" IsRunning="True">
+                        <DataTrigger TargetType="ActivityIndicator" Binding="{Binding KioskApp.ProgramsVm.AwaitingData}" Value="True">
+                            <Setter Property="IsRunning" Value="True" />
+                        </DataTrigger>
+                    </ActivityIndicator>
+                    <Label TextColor="White" HorizontalOptions="CenterAndExpand" Text="Retriving Programs" FontAttributes="Bold" />
+                </StackLayout>
+            </StackLayout>
+            <Label HorizontalOptions="Center" Text="{Binding KioskApp.ProgramsVm.ValidationMessage}" Style="{DynamicResource ValidationEntryErrorStyle}" />
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

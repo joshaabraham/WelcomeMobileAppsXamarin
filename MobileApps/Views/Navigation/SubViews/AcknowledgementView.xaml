@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:LangResources="clr-namespace:MobileApps.Helpers" x:Class="MobileApps.Views.Navigation.SubViews.AcknowledgementView" xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared" xmlns:local="clr-namespace:MobileApps;assembly=EventAndKioskAppMobileApps">
+    <ContentView.Content>
+        <!-- PAGE CONTAINER -->
+        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="{ artina:OnOrientationDouble
+                            Default=40,
+                            PortraitTablet=40,
+                            LandscapeTablet=40 }">
+
+            <!---THANK YOU VIEW TITLE-->
+            <Label LineBreakMode="WordWrap" Text="{x:Static LangResources:AppResourcesEN.ThankYouPageTitle}" Font="Helvetica" TextColor="{ DynamicResource OverImageTextColor }" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" AbsoluteLayout.LayoutFlags="All">
+            <!-- TRANSLATION LOGIC FOR TITLE -->
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Fr">
+                        <Setter Property="Text" Value="{x:Static LangResources:AppResourcesFR.ThankYouPageTitle}"/>
+                    </DataTrigger>
+                    <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Es">
+                        <Setter Property="Text" Value="{x:Static LangResources:AppResourcesES.ThankYouPageTitle}"/>
+                    </DataTrigger>
+                    <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Id">
+                        <Setter Property="Text" Value="{x:Static LangResources:AppResourcesID.ThankYouPageTitle}"/>
+                    </DataTrigger>
+                    <DataTrigger TargetType="Label" Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Ca">
+                        <Setter Property="Text" Value="{x:Static LangResources:AppResourcesCA.ThankYouPageTitle}"/>
+                    </DataTrigger>
+                </Label.Triggers>
+                <Label.FontSize>
+                    <OnIdiom 
+                        x:TypeArguments="x:Double"
+                        Phone="26"
+                        Tablet="36"/>
+                </Label.FontSize>
+            </Label>
+            <!---THANK YOU VIEW MESSAGE -->
+            <Label LineBreakMode="WordWrap" Text="{x:Static LangResources:AppResourcesEN.ThankYouPageSubTitleKiosk}" Font="Helvetica" Margin="0,25,0,0" TextColor="{ DynamicResource OverImageTextColor }" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center" AbsoluteLayout.LayoutFlags="All">
+              <!-- TRANSLATION LOGIC FOR MESSAGE -->
+                 <Label.Triggers>
+                    <!-- ENGLISH MESSAGES -->
+                    <MultiTrigger TargetType="Label"> <MultiTrigger.Conditions> <BindingCondition Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="En"/> <BindingCondition Binding="{Binding KioskApp.SettingsVm.EventModeActive}" Value="true"/> </MultiTrigger.Conditions> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesEN.ThankYouPageSubTitleEvent}" /> </MultiTrigger>
+                    <MultiTrigger TargetType="Label"> <MultiTrigger.Conditions> <BindingCondition Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="En"/> <BindingCondition Binding="{Binding KioskApp.SettingsVm.EventModeActive}" Value="false"/> </MultiTrigger.Conditions> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesEN.ThankYouPageSubTitleKiosk}" /> </MultiTrigger>
+                    <!-- FRENCH MESSAGES -->
+                    <MultiTrigger TargetType="Label"> <MultiTrigger.Conditions> <BindingCondition Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Fr"/> <BindingCondition Binding="{Binding KioskApp.SettingsVm.EventModeActive}" Value="true"/> </MultiTrigger.Conditions> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesFR.ThankYouPageSubTitleEvent}" /> </MultiTrigger>
+                    <MultiTrigger TargetType="Label"> <MultiTrigger.Conditions> <BindingCondition Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Fr"/> <BindingCondition Binding="{Binding KioskApp.SettingsVm.EventModeActive}" Value="false"/> </MultiTrigger.Conditions> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesFR.ThankYouPageSubTitleKiosk}" /> </MultiTrigger>    
+                    <!-- SPANISH MESSAGES -->
+                    <MultiTrigger TargetType="Label"> <MultiTrigger.Conditions> <BindingCondition Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Es"/> <BindingCondition Binding="{Binding KioskApp.SettingsVm.EventModeActive}" Value="true"/> </MultiTrigger.Conditions> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesES.ThankYouPageSubTitleEvent}" /> </MultiTrigger>
+                    <MultiTrigger TargetType="Label"> <MultiTrigger.Conditions> <BindingCondition Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Es"/> <BindingCondition Binding="{Binding KioskApp.SettingsVm.EventModeActive}" Value="false"/> </MultiTrigger.Conditions> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesES.ThankYouPageSubTitleKiosk}" /> </MultiTrigger>
+                    <!-- INDONESIAN MESSAGES -->
+                    <MultiTrigger TargetType="Label"> <MultiTrigger.Conditions> <BindingCondition Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Id"/> <BindingCondition Binding="{Binding KioskApp.SettingsVm.EventModeActive}" Value="true"/> </MultiTrigger.Conditions> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesID.ThankYouPageSubTitleEvent}" /> </MultiTrigger>
+                    <MultiTrigger TargetType="Label"> <MultiTrigger.Conditions> <BindingCondition Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Id"/> <BindingCondition Binding="{Binding KioskApp.SettingsVm.EventModeActive}" Value="false"/> </MultiTrigger.Conditions> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesID.ThankYouPageSubTitleKiosk}" /> </MultiTrigger>   
+                    <!-- CATALIAN MESSAGES -->
+                    <MultiTrigger TargetType="Label"> <MultiTrigger.Conditions> <BindingCondition Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="CA"/> <BindingCondition Binding="{Binding KioskApp.SettingsVm.EventModeActive}" Value="true"/> </MultiTrigger.Conditions> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesCA.ThankYouPageSubTitleEvent}" /> </MultiTrigger>
+                    <MultiTrigger TargetType="Label"> <MultiTrigger.Conditions> <BindingCondition Binding="{Binding KioskApp.LanguageVm.SelectedLanguage}" Value="Ca"/> <BindingCondition Binding="{Binding KioskApp.SettingsVm.EventModeActive}" Value="false"/> </MultiTrigger.Conditions> <Setter Property="Text" Value="{x:Static LangResources:AppResourcesCA.ThankYouPageSubTitleKiosk}" /> </MultiTrigger> 
+                </Label.Triggers>
+                <Label.FontSize>
+                    <OnIdiom 
+                        x:TypeArguments="x:Double"
+                        Phone="13"
+                        Tablet="18"/>
+                </Label.FontSize>
+            </Label>
+            <!-- THE XAML BELOW HOLDS NO PURPOSE FOR THE UI HOWEVER ALLIGNS THE PAGE - REMOVING THIS WILL DISTORT THE PAGE  -->
+            <StackLayout VerticalOptions="CenterAndExpand" Margin="0,35,0,0">
+                <!---Temp Placeholder *DNR*-->
+                <ListView x:Name="test" Style="{DynamicResource CardViewStyle}" SeparatorColor="Transparent">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <StackLayout Padding="10" Spacing="10" HorizontalOptions="Start">
+                                        <Label HorizontalOptions="Center" Text="" Style="{DynamicResource MainMenuLabelStyle}" FontAttributes="Bold" TextColor="White" />
+                                    </StackLayout>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

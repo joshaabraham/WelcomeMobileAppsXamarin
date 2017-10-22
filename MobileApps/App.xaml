@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Application 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="MobileApps.App" 
+	xmlns:local="clr-namespace:MobileApps;assembly=EventAndKioskAppMobileApps" 
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared" 
+	xmlns:effects="clr-namespace:UXDivers.Effects;assembly=UXDivers.Effects"
+	xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms">
+
+	<Application.Resources>
+
+		<!--<ResourceDictionary MergedWith="local:GrialLightTheme">-->
+		<!--<ResourceDictionary MergedWith="local:GrialDarkTheme">-->
+		<!--<ResourceDictionary MergedWith="local:GrialEnterpriseTheme">-->
+
+		<!--	
+			Use the following file as your theme colors.
+			Simply replace colors to march your brand.
+			(It is based on GrialLightTheme but you can use the colors
+			of any other theme)
+		-->
+		<ResourceDictionary MergedWith="local:MyAppTheme">
+			
+			<!-- UNITS -->
+			<x:Double x:Key="BaseFontSize">16</x:Double>
+            <x:Double x:Key="BaseButtonHeight">44</x:Double>
+            <x:Double x:Key="BaseButtonBorderRadius">22</x:Double>
+
+
+			<x:Double x:Key="MainMenuLabelFontsize">18</x:Double>
+			<x:Double x:Key="MainMenuIconFontsize">20</x:Double>
+			<x:Double x:Key="MainMenuHeaderFontsize">18</x:Double>
+			<x:Double x:Key="MainMenuLabelTranslationX">10</x:Double>
+			<x:Double x:Key="MainMenuChevronRightFontsize">24</x:Double>
+			<x:Double x:Key="MainMenuIconWidthRequest">22</x:Double>
+
+			<x:String x:Key="WebViewPageURL">http://www.grialkit.com</x:String>
+			<x:String x:Key="WebViewPageTitle">Grial UI Kit</x:String>
+			
+			<x:String x:Key="GrialShapesFontFamily">grialshapes</x:String>
+			<!-- PUT YOUR OWN ICONS FONT FAMILY BELOW -->
+			<x:String x:Key="IconsFontFamily">grialshapes</x:String>
+			<!--<x:String x:Key="IconsFontFamily">FontAwesome</x:String>-->
+			<!--<x:String x:Key="IconsFontFamily">Ionicons</x:String>-->
+
+			<!-- STATIC IMAGES -->
+			<FileImageSource x:Key="HamburguerIcon">hamburguer_icon.png</FileImageSource>
+            <!--<FileImageSource x:Key="WelcomeBackgroundImagePhone">bg_lci.jpg</FileImageSource>
+            <FileImageSource x:Key="WelcomeBackgroundImageTablet">bg_lci.jpg</FileImageSource>-->
+
+            <!--BACKGROUND IMAGES-->
+            <FileImageSource x:Key="WelcomeBackgroundImageMontrealPhone">bg_lci.jpg</FileImageSource>
+            <FileImageSource x:Key="WelcomeBackgroundImageVancouverPhone">bg_lci_vancouver.jpg</FileImageSource>
+            <FileImageSource x:Key="WelcomeBackgroundImageInternationalPhone">bg_lci.jpg</FileImageSource>
+            <FileImageSource x:Key="WelcomeBackgroundImageDesignPhone">bg_lci_design.jpg</FileImageSource>
+            <FileImageSource x:Key="WelcomeBackgroundImageMontrealTablet">bg_lci.jpg</FileImageSource>
+            <FileImageSource x:Key="WelcomeBackgroundImageVancouverTablet">bg_lci_vancouver.jpg</FileImageSource>
+            <FileImageSource x:Key="WelcomeBackgroundImageInternationalTablet">bg_lci_intl.jpg</FileImageSource>
+            <FileImageSource x:Key="WelcomeBackgroundImageDesignTablet">bg_lci_design.jpg</FileImageSource>
+
+            <FileImageSource x:Key="BrandImage">logo.png</FileImageSource>
+
+			<FileImageSource x:Key="GenericBackgroundImage">generic_bg_image.jpg</FileImageSource>
+			
+			<FileImageSource x:Key="SignUpBackgroundImagePhone">signup_bg.jpg</FileImageSource>
+			<FileImageSource x:Key="SignUpBackgroundImageTablet">signup_bg_tablet.jpg</FileImageSource>
+
+			<FileImageSource x:Key="LoginBackgroundImagePhone">login_bg.jpg</FileImageSource>
+			<FileImageSource x:Key="LoginBackgroundImageTablet">login_bg_tablet.jpg</FileImageSource>
+
+			<FileImageSource x:Key="PasswordRecoveryBackgroundImagePhone">pass_recovery_bg.jpg</FileImageSource>
+			<FileImageSource x:Key="PasswordRecoveryBackgroundImageTablet">pass_recovery_bg_tablet.jpg</FileImageSource>
+
+			<FileImageSource x:Key="WalkthroughStepGenericPhoneBackgroundImage">walkthrough_generic_phone_bg.png</FileImageSource>
+
+			<FileImageSource x:Key="ThemeAvatarSample0Image">user_profile_0.jpg</FileImageSource>
+			<FileImageSource x:Key="ThemeAvatarSample1Image">user_profile_1.jpg</FileImageSource>
+
+			<FileImageSource x:Key="SocialHeaderBackgroundImage0">social_header_bg_0.jpg</FileImageSource>
+			<FileImageSource x:Key="SocialHeaderBackgroundImage1">social_header_bg_1.jpg</FileImageSource>
+
+			<!-- RESPONSIVE COMMON -->
+			<OnIdiom x:Key="MainWrapperPadding" x:TypeArguments="Thickness">
+				<OnIdiom.Phone>0</OnIdiom.Phone>
+				<OnIdiom.Tablet>100,0,100,0</OnIdiom.Tablet>
+			</OnIdiom>
+			<!-- END RESPONSIVE COMMON -->
+
+			<!-- BEGINS RESPONSIVE HELPERS -->
+			<OnIdiom x:Key="TabletVisible" x:TypeArguments="x:Boolean">
+				<OnIdiom.Phone>false</OnIdiom.Phone>
+				<OnIdiom.Tablet>true</OnIdiom.Tablet>
+			</OnIdiom>
+
+			<OnIdiom x:Key="PhoneVisible" x:TypeArguments="x:Boolean">
+				<OnIdiom.Phone>true</OnIdiom.Phone>
+				<OnIdiom.Tablet>false</OnIdiom.Tablet>
+			</OnIdiom>
+
+			<OnPlatform x:Key="AndroidVisible" x:TypeArguments="x:Boolean">
+				<OnPlatform.iOS>false</OnPlatform.iOS>
+				<OnPlatform.Android>true</OnPlatform.Android>
+			</OnPlatform>
+
+			<OnPlatform x:Key="iOSVisible" x:TypeArguments="x:Boolean">
+				<OnPlatform.iOS>true</OnPlatform.iOS>
+				<OnPlatform.Android>false</OnPlatform.Android>
+			</OnPlatform>
+			<!-- ENDS RESPONSIVE HELPERS -->
+
+
+			
+			<!-- IMPLICIT STYLES -->	
+			<Style TargetType="Frame">
+				<Setter Property="OutlineColor" Value="{DynamicResource BrandColor}" />
+			</Style>
+
+			<Style TargetType="Entry">
+				<Setter Property="TextColor" Value="{DynamicResource BaseTextColor}" />
+			</Style>
+
+			<Style TargetType="ActivityIndicator">
+				<Setter Property="Color" Value="{DynamicResource AccentColor}" />
+			</Style>
+
+			<Style TargetType="ContentPage">
+				<Setter Property="BackgroundColor" Value="{DynamicResource BasePageColor}" />
+			</Style>
+
+			<Style TargetType="ContentView">
+				<Setter Property="BackgroundColor" Value="{DynamicResource BasePageColor}" />
+			</Style>
+
+			<Style TargetType="ScrollView">
+				<Setter Property="BackgroundColor" Value="Transparent" />
+			</Style>
+
+			<Style TargetType="TabbedPage">
+				<Setter Property="BackgroundColor" Value="{DynamicResource BaseTabbedPageColor}" />
+			</Style>
+
+			<Style TargetType="Label">
+				<Setter Property="FontSize" Value="{DynamicResource BaseFontSize}" />
+				<Setter Property="TextColor" Value="{DynamicResource BaseTextColor}" />
+			</Style>
+
+			<Style TargetType="ListView">
+				<Setter Property="BackgroundColor" Value="Transparent" />
+				<Setter Property="SeparatorColor" Value="{DynamicResource ListViewSeparatorColor}" />
+				<Setter Property="SeparatorVisibility" Value="Default" />
+			</Style>
+
+			<Style TargetType="TableView">
+				<Setter Property="BackgroundColor" Value="Transparent" />
+				<Setter Property="artina:TableViewProperties.HeaderFooterTextColor" Value="{DynamicResource AccentColor}" />
+			</Style>
+
+			<Style TargetType="Image">
+				<Setter Property="IsOpaque">
+					<Setter.Value>
+						<OnPlatform x:TypeArguments="x:Boolean" Android="true" />
+					</Setter.Value>
+				</Setter>
+			</Style>
+
+			
+
+			<Style TargetType="ProgressBar">
+				<Setter Property="artina:ProgressBarProperties.TintColor" Value="{DynamicResource AccentColor}" />
+			</Style>
+
+			<Style TargetType="Slider">
+				<Setter Property="artina:SliderProperties.TintColor" Value="{DynamicResource AccentColor}" />
+			</Style>
+
+
+			<Style TargetType="TextCell">
+				<Setter Property="TextColor" Value="{ DynamicResource AccentColor }" />
+			</Style>
+
+			<Style TargetType="Button">
+				<Setter Property="FontSize" Value="{DynamicResource BaseFontSize}" />
+				<Setter Property="BorderRadius" Value="22" />
+				<Setter Property="BorderWidth" Value="0" />
+				<Setter Property="BorderColor" Value="Transparent" />
+				<Setter Property="HeightRequest" Value="{DynamicResource BaseButtonHeight}" /> 
+
+				<!-- 
+				Mimic Android Buttons background color 
+				If no background color is set, 
+				the button won't render with height as specified here
+				-->
+				<Setter Property="BackgroundColor">
+					<Setter.Value>
+						<OnPlatform x:TypeArguments="Color" Android="#d6d6d6" />
+					</Setter.Value>
+				</Setter>
+			</Style>
+
+			<Style TargetType="artina:Button">
+				<Setter Property="FontSize" Value="{DynamicResource BaseFontSize}" />
+				<Setter Property="BorderRadius" Value="22" />
+				<Setter Property="BorderWidth" Value="0" />
+				<Setter Property="BorderColor" Value="Transparent" />
+				<Setter Property="HeightRequest" Value="{DynamicResource BaseButtonHeight}" />
+		
+				
+
+				<!-- 
+				Mimic Android Buttons background color 
+				If no background color is set, 
+				the button won't render with height as specified here
+				-->
+				<Setter Property="BackgroundColor">
+					<Setter.Value>
+						<OnPlatform x:TypeArguments="Color" Android="#d6d6d6" />
+					</Setter.Value>
+				</Setter>
+			</Style>
+
+
+			<!-- FFIMAGELOADING STYLES -->
+			<Style TargetType="ffimageloading:CachedImage">	
+				<Setter Property="LoadingPlaceholder" Value="loading_placeholder.png" />
+				<Setter Property="BitmapOptimizations" Value="true" />
+				<Setter Property="DownsampleToViewSize" Value="true" />
+				<Setter Property="TransparencyEnabled" Value="false" />
+				<Setter Property="RetryCount" Value="3" />
+				<Setter Property="RetryDelay" Value="250" />
+			</Style>
+			
+			<!-- BASE STYLES -->
+
+			<Style x:Key="FontIcon" TargetType="Label">				
+				<Setter Property="FontFamily" Value="{ DynamicResource IconsFontFamily }" />
+			</Style>
+
+			<Style x:Key="FontIconBase" TargetType="Label">
+				<Setter Property="FontFamily" Value="{ DynamicResource GrialShapesFontFamily }" />
+			</Style>
+
+            <Style x:Key="FontIconBaseBtn" TargetType="Button">
+                <Setter Property="FontFamily" Value="{ DynamicResource GrialShapesFontFamily }" />
+            </Style>
+
+            <Style x:Key="RoundedButtonStyle" TargetType="Button">
+				<Setter Property="FontSize" Value="{DynamicResource BaseFontSize}" />
+				<Setter Property="BorderRadius" Value="22" />
+				<Setter Property="HeightRequest" Value="{DynamicResource BaseButtonHeight}" />
+			</Style>
+
+			<Style x:Key="Horizontal1ptLineStyle" TargetType="BoxView">
+				<Setter Property="HeightRequest" Value="1" />
+				<Setter Property="BackgroundColor" Value="#11000000" /> 
+			</Style>
+
+			<Style x:Key="StatusLabelStyle" TargetType="Label">
+				<Setter Property="Text" Value=" AVAILABLE " />
+				<Setter Property="VerticalOptions" Value="End" />
+				<Setter Property="HorizontalOptions" Value="Start" />
+				<Setter Property="FontSize" Value="14" />
+			</Style>
+
+			<!-- SPECIFIC STYLES -->
+			<Style x:Key="IconCloseLabelStyle" TargetType="Label" BasedOn="{StaticResource FontIcon}">
+				<Setter Property="FontSize" Value="20" />
+				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
+				<Setter Property="VerticalOptions" Value="FillAndExpand" />
+				<Setter Property="Text" Value="{ x:Static local:GrialShapesFont.Close }" />
+				<Setter Property="HorizontalTextAlignment" Value="Center" />
+				<Setter Property="VerticalTextAlignment" Value="Center" />
+				<Setter Property="TextColor" Value="{ DynamicResource OverImageTextColor }" />
+				<Setter Property="HeightRequest" Value="30" />
+				<Setter Property="WidthRequest" Value="30" />
+			</Style>
+
+			<Style x:Key="IconBackLabelStyle" TargetType="Label" BasedOn="{StaticResource IconCloseLabelStyle}">
+				<Setter Property="Text" Value="{ x:Static local:GrialShapesFont.ArrowLeft }" />
+			</Style>
+
+			<!-- COMMON -->
+			<Style x:Key="AvailableStatusStyle" TargetType="Label" BasedOn="{StaticResource StatusLabelStyle}">
+				<Setter Property="BackgroundColor" Value="{StaticResource OkColor}" />
+				<Setter Property="TextColor" Value="White" />
+			</Style>
+
+			<Style x:Key="RoundShape" TargetType="Label" BasedOn="{ StaticResource FontIconBase }">
+				<Setter Property="Text" Value="{ x:Static local:GrialShapesFont.Circle }" />
+			</Style>
+
+			<!-- MAIN MENU STYLES -->
+			<Style x:Key="MainMenuStyle" TargetType="ContentPage">
+				<Setter Property="BackgroundColor" Value="{DynamicResource MainMenuBackgroundColor}" />
+			</Style>
+
+			<Style x:Key="MainMenuListViewStyle" TargetType="ListView">
+				<Setter Property="BackgroundColor" Value="{DynamicResource MainMenuBackgroundColor}" />
+				<Setter Property="SeparatorVisibility" Value="None" />
+				<Setter Property="SeparatorColor" Value="{DynamicResource MainMenuSeparatorColor}" />
+				<Setter Property="RowHeight" Value="55" />
+			</Style>
+
+			<Style x:Key="MainMenuIconStyle" TargetType="Label">
+				<Setter Property="TextColor" Value="{ DynamicResource MainMenuIconColor }" />
+				<Setter Property="FontFamily" Value="grialshapes" />
+				<Setter Property="FontSize" Value="{ DynamicResource MainMenuIconFontsize }" />
+				<Setter Property="VerticalOptions" Value="CenterAndExpand" />
+			</Style>
+
+			<Style x:Key="MainMenuHeaderStyle" TargetType="Label">
+				<Setter Property="BackgroundColor" Value="{DynamicResource MainMenuBackgroundColor}" />
+				<Setter Property="TextColor" Value="{ DynamicResource MainMenuTextColor }" />
+				<Setter Property="VerticalTextAlignment" Value="Center" />
+				<Setter Property="FontSize" Value="{DynamicResource MainMenuHeaderFontsize }" />
+				<Setter Property="FontAttributes" Value="Bold" />
+			</Style>
+
+			<Style x:Key="MainMenuLabelStyle" TargetType="Label">
+				<Setter Property="TextColor" Value="{ DynamicResource MainMenuTextColor }" />
+				<Setter Property="VerticalTextAlignment" Value="Center" />
+				<Setter Property="TranslationX" Value="{DynamicResource MainMenuLabelTranslationX}" />
+				<Setter Property="FontSize" Value="{DynamicResource MainMenuLabelFontsize}" />
+				<Setter Property="HorizontalOptions" Value="StartAndExpand" />
+				<Setter Property="VerticalOptions" Value="CenterAndExpand" />
+				<Setter Property="LineBreakMode" Value="TailTruncation" />
+			</Style>
+
+			<Style x:Key="MainMenuRightChevronStyle" TargetType="Label" BasedOn="{ StaticResource FontIconBase }">
+				<Setter Property="Text" Value="{ x:Static local:GrialShapesFont.ArrowRight }" />
+				<Setter Property="TextColor" Value="{ DynamicResource MainMenuIconColor }" />
+				<Setter Property="VerticalTextAlignment" Value="Center" />
+				<Setter Property="FontSize" Value="{DynamicResource MainMenuChevronRightFontsize}" />
+				<Setter Property="HorizontalOptions" Value="End" />
+			</Style>
+
+			<!-- NOTIFICATION STYLES -->
+			<Style x:Key="NotificationItemTemplateShape" TargetType="Label" BasedOn="{ StaticResource FontIconBase }">
+				<Setter Property="Text" Value="{ x:Static local:GrialShapesFont.Circle }" />
+				<Setter Property="FontSize">
+					<Setter.Value>
+						<OnIdiom x:TypeArguments="x:Double" Phone="25" Tablet="35" />
+					</Setter.Value>
+				</Setter>
+				<Setter Property="Opacity" Value="1" />
+			</Style>
+
+			<!-- WELCOME STYLES -->
+            <Style x:Key="WelcomeBackgroundImageMontreal" TargetType="Image">
+				<Setter Property="Aspect" Value="AspectFill" />
+				<Setter Property="Source">
+					<Setter.Value>
+                        <OnIdiom x:TypeArguments="ImageSource" Phone="{ StaticResource WelcomeBackgroundImageMontrealPhone }" Tablet="{ StaticResource WelcomeBackgroundImageMontrealTablet }" />
+					</Setter.Value>
+				</Setter>
+			</Style>
+            <Style x:Key="WelcomeBackgroundImageVancouver" TargetType="Image">
+                <Setter Property="Aspect" Value="AspectFill" />
+                <Setter Property="Source">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="ImageSource" Phone="{ StaticResource WelcomeBackgroundImageVancouverPhone }" Tablet="{ StaticResource WelcomeBackgroundImageVancouverTablet }" />
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="WelcomeBackgroundImageInternational" TargetType="Image">
+                <Setter Property="Aspect" Value="AspectFill" />
+                <Setter Property="Source">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="ImageSource" Phone="{ StaticResource WelcomeBackgroundImageInternationalPhone }" Tablet="{ StaticResource WelcomeBackgroundImageInternationalTablet }" />
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="WelcomeBackgroundImageDesign" TargetType="Image">
+                <Setter Property="Aspect" Value="AspectFill" />
+                <Setter Property="Source">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="ImageSource" Phone="{ StaticResource WelcomeBackgroundImageDesignPhone }" Tablet="{ StaticResource WelcomeBackgroundImageDesignTablet }" />
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <!-- LOGINS STYLES -->
+			<Style x:Key="SignUpBackgroundImage" TargetType="Image">
+			 <Setter Property="Aspect" Value="AspectFill" />
+				<Setter Property="Source">
+					<Setter.Value>
+						<OnIdiom x:TypeArguments="ImageSource" Phone="{ StaticResource SignUpBackgroundImagePhone }" Tablet="{ StaticResource LoginBackgroundImageTablet }" />
+					</Setter.Value>
+				</Setter>
+			</Style>
+
+			<Style x:Key="LoginBackgroundImage" TargetType="Image">
+			 <Setter Property="Aspect" Value="AspectFill" />
+				<Setter Property="Source">
+					<Setter.Value>
+						<OnIdiom x:TypeArguments="ImageSource" Phone="{ StaticResource LoginBackgroundImagePhone }" Tablet="{ StaticResource LoginBackgroundImageTablet }" />
+					</Setter.Value>
+				</Setter>
+			</Style>
+
+			<Style x:Key="PasswordRecoveryBackgroundImage" TargetType="Image">
+			 <Setter Property="Aspect" Value="AspectFill" />
+				<Setter Property="Source">
+					<Setter.Value>
+						<OnIdiom x:TypeArguments="ImageSource" Phone="{ StaticResource PasswordRecoveryBackgroundImagePhone }" Tablet="{ StaticResource LoginBackgroundImageTablet }" />
+					</Setter.Value>
+				</Setter>
+			</Style>
+
+			<Style x:Key="PrimaryActionButtonStyle" TargetType="Button" BasedOn="{StaticResource RoundedButtonStyle}">
+				<Setter Property="BackgroundColor" Value="{DynamicResource AccentColor}" />
+				<Setter Property="TextColor" Value="{DynamicResource LabelButtonColor}" />
+				<Setter Property="HeightRequest" Value="{DynamicResource BaseButtonHeight}" /> 
+			</Style>
+
+			<Style x:Key="SecondaryActionButtonStyle" TargetType="Button" BasedOn="{StaticResource RoundedButtonStyle}">
+				<Setter Property="BackgroundColor" Value="{DynamicResource ComplementColor}" />
+				<Setter Property="TextColor" Value="{DynamicResource LabelButtonColor}" />
+				<Setter Property="HeightRequest" Value="{DynamicResource BaseButtonHeight}" />
+			</Style>
+
+			<Style x:Key="TransparentButtonStyle" TargetType="Button" BasedOn="{StaticResource RoundedButtonStyle}">
+				<Setter Property="BackgroundColor" Value="Transparent" />
+				<Setter Property="TextColor" Value="{DynamicResource LabelButtonColor}" />
+				<Setter Property="HeightRequest" Value="{DynamicResource BaseButtonHeight}" />
+			</Style>
+
+			<!-- ENTRY FIELDS -->
+			<Style x:Key="ArtinaEntryStyle" TargetType="Entry">
+				<Setter Property="TextColor" Value="White" />
+				<Setter Property="artina:EntryProperties.BorderStyle" Value="BottomLine" />
+				<Setter Property="artina:EntryProperties.BorderWidth" Value="1" />
+				<Style.Triggers>
+					<Trigger TargetType="Entry" Property="IsFocused" Value="True">
+						<Setter Property="artina:EntryProperties.BorderColor" Value="{DynamicResource AccentColor}" />
+					</Trigger>
+				</Style.Triggers>
+			</Style>
+
+			<Style x:Key="LoginEntryStyle" TargetType="Entry">
+				<Setter Property="TextColor" Value="White" />
+				<Setter Property="BackgroundColor" Value="Transparent" />
+			</Style>
+
+			<Style x:Key="ArtinaLoginEntryStyle" TargetType="Entry" BasedOn="{ StaticResource LoginEntryStyle }">
+				<Setter Property="artina:EntryProperties.BorderStyle" Value="BottomLine" />
+				<Setter Property="artina:EntryProperties.BorderColor" Value="{ DynamicResource OverImageTextColor }" />
+				<Setter Property="artina:EntryProperties.PlaceholderColor" Value="{ DynamicResource OverImageTextColor }" />
+
+				<Style.Triggers>
+					<Trigger TargetType="Entry" Property="IsFocused" Value="True">
+						<Setter Property="artina:EntryProperties.BorderColor" Value="{ DynamicResource AccentColor }" />
+					</Trigger>
+
+					<!-- 
+					     Workaround:
+					
+						 This double Property Trigger daclaration should not be necessary. Setting the Trigger for IsFocused=True
+					     should be enough. But Property Triggers don't play nice with DynamicResource values (XF 2.3.3.193). As a workaround
+					     the Trigger for IsFocused=False has been added too. 
+					-->
+					<Trigger TargetType="Entry" Property="IsFocused" Value="False">
+						<Setter Property="artina:EntryProperties.BorderColor" Value="{ DynamicResource OverImageTextColor }" />
+					</Trigger>
+				</Style.Triggers>
+			</Style>
+
+			<!-- VALIDATIONS -->
+			<Style x:Key="ValidationEntryErrorStyle" TargetType="Label">
+				<Setter Property="BackgroundColor" Value="{ DynamicResource ErrorColor }" />
+				<Setter Property="TextColor" Value="White" />
+				<Setter Property="FontSize" Value="18" />
+			</Style>
+
+            <Style x:Key="ValidationEntryErrorStyleLoader" TargetType="ActivityIndicator">
+                <Setter Property="BackgroundColor" Value="{ DynamicResource ErrorColor }" />
+                <Setter Property="Color" Value="White" />
+            </Style>
+
+            <Style x:Key="ValidationEntryWarningStyle" TargetType="Label">
+				<Setter Property="BackgroundColor" Value="{ DynamicResource WarningColor }" />
+				<Setter Property="TextColor" Value="White" />
+				<Setter Property="FontSize" Value="18" />
+			</Style>
+
+			<!-- CHAT STYLES -->
+			<Style x:Key="ChatMessageItemBaseStyle" TargetType="Label">
+				<Setter Property="FontSize" Value="14" />
+			</Style>
+
+			<Style x:Key="ChatMessageItemInfoBaseStyle" TargetType="Label">
+				<Setter Property="FontSize" Value="12" />
+				<Setter Property="TextColor" Value="#FF212121" />
+			</Style>
+
+			<Style x:Key="ChatMessageItemBalloonBaseStyle" TargetType="StackLayout">
+				<Setter Property="Padding" Value="10" />
+			</Style>
+
+			<Style x:Key="ChatIconButtonBaseStyle" TargetType="Label" BasedOn="{ StaticResource FontIcon }">
+				<Setter Property="HorizontalTextAlignment" Value="Center" />
+				<Setter Property="VerticalTextAlignment" Value="Center" />
+				<Setter Property="FontSize" Value="20" />
+			</Style>
+			
+			<Style x:Key="ChatIconButtonPictureStyle" TargetType="Label" BasedOn="{ StaticResource ChatIconButtonBaseStyle }">
+				<Setter Property="Text" Value="{ x:Static local:GrialShapesFont.PhotoCamera }" />
+			</Style>
+
+			<Style x:Key="ChatIconButtonSendStyle" TargetType="Label" BasedOn="{ StaticResource ChatIconButtonBaseStyle }">
+				<Setter Property="Text" Value="{ x:Static local:GrialShapesFont.Send }" />
+				<Setter Property="TextColor" Value="{ DynamicResource AccentColor }" />
+			</Style>
+
+			<Style x:Key="ChatMessageEntryStyle" TargetType="Entry">
+				<Setter Property="FontSize" Value="12" />
+				<Setter Property="BackgroundColor">
+					<Setter.Value>
+						<OnPlatform x:TypeArguments="Color"
+							iOS="#FFFFFF"
+							Android="#00FFFFFF" />
+					</Setter.Value>
+				</Setter>
+			</Style>
+			
+			<!-- WALKTHROUGH -->
+			<Style x:Key="WalkthroughStepBaseStyle" TargetType="ContentPage">
+				<Setter Property="BackgroundColor" Value="{DynamicResource BrandColor}" />
+			</Style>
+
+			<Style x:Key="WalkthroughStepStyle" TargetType="ContentPage" BasedOn="{StaticResource WalkthroughStepBaseStyle}">
+				<Setter Property="Opacity" Value="1" />
+			</Style>
+
+			<Style x:Key="WalkthroughStepIconStyle" TargetType="Label" BasedOn="{StaticResource FontIcon}">
+				<Setter Property="HorizontalTextAlignment" Value="Center" />
+				<Setter Property="VerticalOptions" Value="CenterAndExpand" />
+				<Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+				<Setter Property="FontSize" Value="72" />
+				<Setter Property="TextColor" Value="{DynamicResource OverImageTextColor}" />
+			</Style>
+
+			<Style x:Key="WalktrhoughItemTemplateShape" TargetType="Label" BasedOn="{ StaticResource FontIconBase }">
+				<Setter Property="Text" Value="{ x:Static local:GrialShapesFont.Circle }" />
+				<Setter Property="HorizontalTextAlignment" Value="Center" />
+				<Setter Property="VerticalTextAlignment" Value="Center" />
+				<Setter Property="VerticalOptions" Value="CenterAndExpand" />
+				<Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+				<Setter Property="TextColor" Value="White" />
+				<Setter Property="Opacity" Value="0.1" />
+			</Style>
+
+
+			<!-- SETTINGS -->
+            <Style x:Key="SaveButtonStyle" TargetType="Button" BasedOn="{StaticResource RoundedButtonStyle}">
+                <Setter Property="BackgroundColor" Value="{DynamicResource SaveButtonColor}" />
+                <Setter Property="TextColor" Value="#FFF" />
+                <Setter Property="HeightRequest" Value="{DynamicResource BaseButtonHeight}" />
+            </Style>
+
+            <Style x:Key="DeleteButtonStyle" TargetType="Button" BasedOn="{StaticResource RoundedButtonStyle}">
+				<Setter Property="BackgroundColor" Value="{DynamicResource DeleteButtonColor}" />
+				<Setter Property="TextColor" Value="#FFF" />
+				<Setter Property="HeightRequest" Value="{DynamicResource BaseButtonHeight}" />
+			</Style>
+
+			<!-- DOCUMENT TIMELINE -->
+			<Style x:Key="DocumentTimelineBubbleStyle" TargetType="VisualElement">
+				<Setter Property="effects:Effects.CornerRadius" Value="4" />
+			</Style>
+
+			<Style x:Key="DocumentTimelineBulletStyle" TargetType="Label" BasedOn="{StaticResource RoundShape}">
+				<Setter Property="Text" Value="{ x:Static local:GrialShapesFont.Circle }" />
+			</Style>
+			
+			<!-- SOCIAL -->
+			<Style x:Key="SocialHeaderStyle" TargetType="Label">
+				<Setter Property="TranslationX" Value="20" />
+				<Setter Property="VerticalOptions" Value="CenterAndExpand" />
+				<Setter Property="FontSize" Value="14" />
+				<Setter Property="HeightRequest" Value="46" />
+				<Setter Property="VerticalTextAlignment" Value="Center" />
+				<Setter Property="TextColor" Value="{ DynamicResource BaseTextColor }" />
+			</Style>
+
+			<Style x:Key="SocialHeaderStyleBorderBottomStyle" TargetType="Label">
+				<Setter Property="HeightRequest" Value="1" />
+				<Setter Property="BackgroundColor" Value="{ DynamicResource ListViewSeparatorColor }" />
+			</Style>
+
+
+			<Style x:Key="ToolbarStyle" TargetType="Grid">
+				<Setter Property="HeightRequest" Value="60" />
+				<Setter Property="ColumnSpacing" Value="0" />
+			</Style>
+			
+			<!-- BRAND BLOCK -->
+			<Style x:Key="BrandContainerStyle" TargetType="StackLayout">
+				<Setter Property="HorizontalOptions" Value="Start" />
+				<Setter Property="VerticalOptions" Value="Start" />
+			</Style>
+			
+				<Style x:Key="BrandNameStyle" TargetType="Label">
+					<Setter Property="FontSize" Value="24" />
+					<Setter Property="TextColor" Value="{DynamicResource BaseTextColor}" />
+				</Style>
+				
+				<Style x:Key="BrandNameOrnamentStyle" TargetType="BoxView">
+					<Setter Property="HeightRequest" Value="4" />
+					<Setter Property="VerticalOptions" Value="End" />
+					<Setter Property="HorizontalOptions" Value="Start" />
+					<Setter Property="WidthRequest" Value="50" />
+					<Setter Property="BackgroundColor" Value="{ DynamicResource AccentColor }" />
+				</Style>
+
+			<!-- LAYOUT HELPERS -->
+			<Style x:Key="Spacer" TargetType="BoxView">
+				<Setter Property="BackgroundColor" Value="Transparent" />
+			</Style>
+
+				<Style x:Key="SpacerThemeShowCaseStyle" TargetType="BoxView" BasedOn="{ StaticResource Spacer }">
+					<Setter Property="HeightRequest" Value="20" />
+				</Style>
+
+				<Style x:Key="HorizontalRuleStyle" TargetType="BoxView">
+					<Setter Property="BackgroundColor" Value="{DynamicResource AccentColor}" />
+					<Setter Property="HeightRequest" Value="1" />
+				</Style> 
+
+			<Style x:Key="ThemeShowCaseHorizontalRuleStyle" TargetType="BoxView" BasedOn="{ StaticResource HorizontalRuleStyle }">
+				<Setter Property="BackgroundColor" Value="{ DynamicResource BaseSeparatorColor }" />
+				<Setter Property="Margin" Value="0,28" />
+			</Style>
+
+			<Style x:Key="LoginPadding" TargetType="StackLayout">
+				<Setter Property="Padding" Value="40,0,40,0" />
+			</Style>
+
+
+			<!-- THEME -->
+			<Style TargetType="artina:CircleImage">
+				<Setter Property="WidthRequest" Value="50" />
+				<Setter Property="HeightRequest" Value="50" />
+				<Setter Property="BorderThickness" Value="3" />
+				<Setter Property="BorderColor" Value="{DynamicResource AccentColor}" />
+			</Style>
+
+				<Style x:Key="Avatar" TargetType="artina:CircleImage">
+					<Setter Property="WidthRequest" Value="50" />
+					<Setter Property="HeightRequest" Value="50" />
+					<Setter Property="BorderThickness" Value="3" />
+					<Setter Property="BorderColor" Value="{DynamicResource AccentColor}" />
+				</Style>
+
+				<Style x:Key="AvatarXSmall" TargetType="artina:CircleImage" BasedOn="{ StaticResource Avatar }">
+					<Setter Property="WidthRequest" Value="36" />
+					<Setter Property="HeightRequest" Value="36" />
+					<Setter Property="BorderThickness" Value="2" />
+				</Style>
+
+				<Style x:Key="AvatarSmall" TargetType="artina:CircleImage" BasedOn="{ StaticResource Avatar }">
+					<Setter Property="WidthRequest" Value="44" />
+					<Setter Property="HeightRequest" Value="44" />
+				</Style>
+
+				<Style x:Key="AvatarLarge" TargetType="artina:CircleImage" BasedOn="{ StaticResource Avatar }">
+					<Setter Property="WidthRequest" Value="110" />
+					<Setter Property="HeightRequest" Value="110" />
+				</Style>
+
+
+			<Style x:Key="GrialBaseIconShapeDemo" TargetType="Label" BasedOn="{ StaticResource FontIconBase }">
+                <Setter Property="TextColor" Value="{ DynamicResource BaseTextColor }" />
+				<Setter Property="FontSize" Value="24" />
+			</Style>
+
+			<Style x:Key="FontIconItemDemo" TargetType="Label" BasedOn="{ StaticResource FontIcon }">
+				<Setter Property="TextColor" Value="{ DynamicResource AccentColor }" />
+				<Setter Property="FontSize" Value="24" />
+			</Style> 
+
+
+			<!-- ECOMMERCE -->
+			<Style x:Key="EcommerceProductGridBannerStyle" TargetType="StackLayout">
+				<Setter Property="HeightRequest" Value="120" />
+				<Setter Property="BackgroundColor" Value="{DynamicResource BrandColor}" />
+			</Style>
+
+			<!-- CUSTOM NAVBAR -->
+			<Style x:Key="CustomNavBarStyle" TargetType="Grid">
+                <Setter Property="BackgroundColor" Value="{ DynamicResource CustomNavBarBrandColor }" />
+				<Setter Property="HeightRequest">
+					<Setter.Value>
+						<OnPlatform x:TypeArguments="x:Double" Android="56" iOS="64" />
+					</Setter.Value>
+				</Setter>
+
+				<Setter Property="effects:Effects.Shadow" >
+					<Setter.Value>
+						<OnPlatform x:TypeArguments="x:Boolean" Android="true" iOS="false" />
+					</Setter.Value>
+				</Setter>
+				<Setter Property="effects:Effects.ShadowSize" Value="4" />
+			</Style>
+
+
+			<!--Dashboard Item Template-->
+			<Style x:Key="DashboardItemTemplateShape" TargetType="Label" BasedOn="{ StaticResource FontIconBase }">
+				<Setter Property="Text" Value="{ x:Static local:GrialShapesFont.Circle }" />
+				<Setter Property="FontSize">
+					<Setter.Value>
+						<OnIdiom x:TypeArguments="x:Double" Phone="60" Tablet="65" />
+					</Setter.Value>
+				</Setter>
+				<Setter Property="Opacity" Value="1" />
+			</Style>
+
+			<Style x:Key="DashboardItemTemplateIcon" TargetType="Label" BasedOn="{ StaticResource FontIcon }">
+				<Setter Property="FontSize">
+					<Setter.Value>
+						<OnIdiom x:TypeArguments="x:Double" Phone="25" Tablet="35" />
+					</Setter.Value>
+				</Setter>
+				<Setter Property="Opacity" Value="1" />
+			</Style>
+
+			<Style x:Key="DashboardVariantItemTemplateIcon" TargetType="Label" BasedOn="{ StaticResource FontIcon }">
+				<Setter Property="FontSize">
+					<Setter.Value>
+						<OnIdiom x:TypeArguments="x:Double" Phone="70" Tablet="85" />
+					</Setter.Value>
+				</Setter>
+				<Setter Property="Opacity" Value="1" />
+			</Style>
+
+			<x:Double x:Key="DashboardFlatSpacing">0</x:Double>
+			<Thickness x:Key="DashboardFlatPadding">0</Thickness>
+
+			
+			<!--Dashboard Multiple Scroll-->
+			<OnIdiom x:TypeArguments="GridLength" Phone="250" Tablet="500" x:Key="DashboardMultipleScrollMainItemHeight" />
+
+
+			<OnIdiom x:TypeArguments="GridLength" Phone="134" Tablet="268" x:Key="DashboardMultipleScrollSecondaryItemRowHeight" />
+			
+			<OnIdiom x:TypeArguments="GridLength" Phone="81" Tablet="162" x:Key="DashboardMultipleScrollSecondaryItemColumnWidth" />
+
+			<OnIdiom x:TypeArguments="LayoutOptions" Phone="FillAndExpand" Tablet="CenterAndExpand" x:Key="DashboardMultipleScrollMainItemVerticalAlignment" />
+
+			<OnIdiom x:TypeArguments="Thickness" Phone="20,30,20,20" Tablet="60" x:Key="DashboardMultipleScrollMainItemMargin" />
+
+			<OnIdiom x:TypeArguments="x:Double" Phone="20" Tablet="30" x:Key="DashboardMultipleScrollMainItemTitleFontSize" />
+
+			<OnIdiom x:TypeArguments="x:Double" Phone="14" Tablet="18" x:Key="DashboardMultipleScrollMainItemDescriptionFontSize" />
+
+			<OnIdiom x:TypeArguments="x:Double" Phone="10" Tablet="40" x:Key="DashboardMultipleScrollMainItemRowSpacing" />
+
+
+			<Style x:Key="DashboardMultipleScrollItemTitleStyle" TargetType="Label">
+				<Setter Property="Margin" Value="10,20,10,10" />
+				<Setter Property="FontSize" Value="16" />
+				<Setter Property="FontAttributes" Value="Bold" />
+				<Setter Property="TextColor" Value="{ DynamicResource BaseTextColor }" />
+				<Setter Property="VerticalTextAlignment" Value="End" />
+			</Style>
+
+			<Style x:Key="DashboardMultipleScrollResponsiveImageStyle" TargetType="Image">
+				<Setter Property="Aspect" Value="AspectFill" />
+			</Style>
+
+			<Style x:Key="DashboardMultipleScrollShimStyle" TargetType="Image">
+				<Setter Property="Source" Value="grialflix_main_item_gradient.png" />
+				<Setter Property="VerticalOptions" Value="FillAndExpand" />
+				<Setter Property="Aspect" Value="Fill" />
+				<Setter Property="Opacity" Value=".7" />
+			</Style>
+
+			<Style x:Key="DashboardMultipleScrollMainItemTitleStyle" TargetType="Label">
+				<Setter Property="TextColor" Value="{ DynamicResource OverImageTextColor }" />
+				<Setter Property="FontSize" Value="{ DynamicResource DashboardMultipleScrollMainItemTitleFontSize }" />
+				<Setter Property="FontAttributes" Value="Bold" />
+			</Style>
+
+			
+			<Style x:Key="DashboardMultipleScrollMainItemDescriptionStyle" TargetType="Label">
+				<Setter Property="TextColor" Value="{ DynamicResource OverImageTextColor }" />
+				<Setter Property="FontSize" Value="{ DynamicResource DashboardMultipleScrollMainItemDescriptionFontSize }" />
+				<Setter Property="VerticalOptions" Value="FillAndExpand" />
+			</Style>
+
+			<Style x:Key="DashboardBadgeStyle" TargetType="VisualElement">
+				<Setter Property="effects:Effects.Shadow" Value="True" />
+				<Setter Property="effects:Effects.ShadowSize" Value="2" />
+				<Setter Property="effects:Effects.ShadowIOSColor" Value="#33000000" />
+			</Style>
+			
+			<!-- MAIN MENU -->
+			
+			<Style x:Key="IsNewRoundedLabelStyle" TargetType="local:RoundedLabel">
+				<Setter Property="Margin" Value="0,0,20,0" />
+				<Setter Property="RoundedLabelFontSize" Value="8" />
+				<Setter Property="RoundedLabelFontAttributes" Value="Bold" />
+				<Setter Property="RoundedLabelPadding" Value="6,4" />
+				<Setter Property="RoundedLabelTextColor" Value="{ DynamicResource InverseTextColor }" />
+				<Setter Property="RoundedLabelCornerRadius" Value="2" />
+				<Setter Property="HorizontalOptions" Value="End" />
+				<Setter Property="RoundedLabelBackgroundColor" Value="{ DynamicResource RoundedLabelBackgroundColor }" />
+			</Style>
+			
+			<!-- CARDS -->
+			<OnPlatform x:TypeArguments="x:Double" x:Key="CardViewCornerRadius" Android="4" iOS="4" />
+
+			<!-- TAG LABEL -->
+			<OnPlatform x:TypeArguments="x:Double" x:Key="TagLabelCornerRadius" Android="6" iOS="6" />
+			
+			<Style x:Key="CardViewStyle" TargetType="VisualElement">
+				<Setter Property="effects:Effects.CornerRadius" Value="{ DynamicResource CardViewCornerRadius }" />
+				<Setter Property="effects:Effects.Shadow" Value="True" />
+				<Setter Property="effects:Effects.ShadowSize" Value="5" />
+				<Setter Property="effects:Effects.ShadowIOSColor" Value="#77000000" />
+			</Style>
+
+			<Style x:Key="TagLabelStyle" TargetType="local:RoundedLabel">
+				<Setter Property="RoundedLabelCornerRadius" Value="{ DynamicResource TagLabelCornerRadius }" />
+				<Setter Property="RoundedLabelText" Value="{ Binding Section }" />
+				<Setter Property="RoundedLabelTextColor" Value="{ DynamicResource OverImageTextColor }" />
+				<Setter Property="RoundedLabelFontSize" Value="12" />
+				<Setter Property="RoundedLabelBackgroundColor" Value="{ DynamicResource TranslucidBlack }" />
+			</Style>
+
+			<!-- STATUS BAR GRADIENT -->
+			<Style x:Key="StatusBarShimStyle" TargetType="Image">
+				<Setter Property="Source" Value="status_bar_gradient.png" />
+				<Setter Property="VerticalOptions" Value="FillAndExpand" />
+				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
+				<Setter Property="Aspect" Value="Fill" />
+				<Setter Property="Opacity" Value=".7" />
+			</Style>
+
+
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>

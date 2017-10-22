@@ -1,0 +1,1854 @@
+{
+	"@Global": {},
+
+	"ArticleFeedItemTemplate.xaml": {
+		"Title": "United by faith ",
+        "Subtitle": "Friendship beyond everthing",
+		"Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. Sed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. Maecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+		"Section": "ACTUALITY",
+		"Author": "UXDIVERS",
+		"Avatar": "friend_thumbnail_55.jpg",
+		"BackgroundImage": "article_image_0.jpg",
+		"Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+		"QuoteAuthor": "Jaco Morrison",
+		"When": "JAN 5, 2017",
+		"Likes": "92",
+		"Followers": "2.4K"
+	},
+	"ArticleVariantItemTemplate.xaml": {
+		"Title": "United by faith ",
+        "Subtitle": "Friendship beyond everthing",
+		"Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. Sed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. Maecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+		"Section": "ACTUALITY",
+		"Author": "UXDIVERS",
+		"Avatar": "friend_thumbnail_55.jpg",
+		"BackgroundImage": "article_image_0.jpg",
+		"Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+		"QuoteAuthor": "Jaco Morrison",
+		"When": "JAN 5, 2017",
+		"Likes": " 92",
+		"Followers": " 2.4K"
+	},
+	"ArticleItemTemplate.xaml": {
+		"Title": "United by faith ",
+        "Subtitle": "Friendship beyond everthing",
+		"Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. Sed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. Maecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+		"Section": "ACTUALITY",
+		"Author": "UXDIVERS",
+		"Avatar": "friend_thumbnail_55.jpg",
+		"BackgroundImage": "article_image_0.jpg",
+		"Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+		"QuoteAuthor": "Jaco Morrison",
+		"When": "JAN 5, 2017",
+		"Likes": "92",
+		"Followers": "2.4K"
+	},
+	"CommentItemTemplate.xaml": {
+		"From": {
+			"Avatar": "friend_thumbnail_55.jpg",
+			"Name": "Jaco Morrison"
+		},
+		"Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. Sed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. Maecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+		"When": "DEC 16, 2017"
+	},
+	"ArticlesListVariantPage.xaml": {
+		"PostsList": [{
+			"Title": "United by faith ",
+            "Subtitle": "Friendship beyond everthing",
+			"Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. \nSed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. \n\nMaecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+			"Section": "ACTUALITY",
+			"Author": "UXDIVERS",
+			"Avatar": "friend_thumbnail_55.jpg",
+			"BackgroundImage": "article_image_0.jpg",
+			"Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+			"QuoteAuthor": "Jaco Morrison",
+		    "When": "JAN 9, 2017",
+			"Likes": " 79",
+			"Followers": " 1.4K"
+		}, {
+			"Title": "Olympic dream",
+			"Subtitle": "The way to the podium",
+			"Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. \nSed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. \n\nMaecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+			"Section": "SPORTS", 
+			"Author": "Pat Davies",
+			"Avatar": "friend_thumbnail_27.jpg",
+			"BackgroundImage": "article_image_1.jpg",
+			"Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+			"QuoteAuthor": "Pat Davies",
+			"When": "FEB 14, 2017",
+			"Likes": " 38",
+			"Followers": " 2.2K"
+		}, {
+			"Title": "Wheels of fortune",
+			"Subtitle": "And the wind cries mary",
+			"Body": "In connection with this appellative of 'Whalebone whales,' it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+			"Section": "FREE TIME",
+			"Author": "Regina Joplin",
+			"Avatar": "friend_thumbnail_34.jpg",
+			"BackgroundImage": "article_image_2.jpg",
+			"Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+			"QuoteAuthor": "Regina Joplin",
+			"When": "MAR 29, 2017",
+			"Likes": " 37",
+			"Followers": " 2.1K"
+		}, {
+			"Title": "Last adventure",
+			"Subtitle": "The conquest of space",
+			"Body": "In connection with this appellative of 'Whalebone whales,' it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+			"Section": "SCIENCE",
+			"Author": "James Clapton",
+			"Avatar": "friend_thumbnail_31.jpg",
+			"BackgroundImage": "article_image_2.jpg",
+			"Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+			"QuoteAuthor": "SampleData.Friends[1].Name",
+			"When": "APR 13, 2017",
+			"Likes": " 33",
+			"Followers": " 3.7K"
+		}, {
+			"Title": "Sweet leaf",
+			"Subtitle": "The rainforest newest hope ",
+			"Body": "In connection with this appellative of 'Whalebone whales,' it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+			"Section": "NATURE",
+			"Author": "Margaret Whites",
+			"Avatar": "friend_thumbnail_71.jpg",
+			"BackgroundImage": "article_image_4.jpg",
+			"Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+			"QuoteAuthor": "Pat Davies",
+			"When": "MAY 1, 2017",
+			"Likes": " 92",
+			"Followers": " 2.1K"
+		}, {
+			"Title": "Smoke kills",
+			"Subtitle": "The war against tabacco",
+			"Body": "In connection with this appellative of 'Whalebone whales,' it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+			"Section": "HEALTH",
+			"Author": "Skyler Harrisson",
+			"Avatar": "friend_thumbnail_75.jpg",
+			"BackgroundImage": "article_image_5.jpg",
+			"Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+			"QuoteAuthor": "Skyler Harrisson",
+			"When": "JUL 22, 2017",
+			"Likes": " 192",
+			"Followers": " 1.4K"
+		}]
+	},
+	"ArticleViewPage.xaml": {
+		"Post": {
+			"Title": "United by faith ",
+            "Subtitle": "Friendship beyond everthing",
+			"Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. Sed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. Maecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+			"Section": "ACTUALITY",
+			"Author": "Mark Gonzales",
+			"Avatar": "friend_thumbnail_55.jpg",
+			"BackgroundImage": "article_image_0.jpg",
+			"Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+			"QuoteAuthor": "Jaco Morrison",
+			"When": "JUN 5, 2017",
+			"Likes": " 92", 
+			"Followers": " 2.4K"
+		},
+		"Comments": [{
+			"From": {
+				"Name": "Janis Spector",
+				"Avatar": "friend_thumbnail_31.jpg"
+			},
+			"When": "July 7",
+			"Body": "Hey buddy :), what's up? I'm currently working on this amazing stuff called Grial. Have you heard about it? You shoud give it a try....it really rocks!!!!!."
+		}, {
+			"From": {
+				"Name": "Janis Spector",
+				"Avatar": "friend_thumbnail_31.jpg"
+			},
+			"When": "July 7",
+			"Body": "Hey buddy :), what's up? I'm currently working on this amazing stuff called Grial. Have you heard about it? You shoud give it a try....it really rocks!!!!!."
+		}]
+	},
+	"DashboardItemTemplate.xaml": {
+		"BackgroundColor": "#AAc01e5c",
+		"BackgroundImage": "dashboard_thumbnail_0.jpg",
+		"ShowBackgroundColor": "true",
+		"Icon": "\uf0c2",
+		"Name": "Dashboard Item"
+	},
+	"DashboardPage.xaml": {
+		"Items": [{
+			"Name": "Social",
+			"BackgroundImage": "dashboard_thumbnail_6.jpg",
+			"BackgroundColor": "#921243",
+			"Icon": "\ue7fd"
+		}, {
+			"Name": "Articles",
+			"BackgroundImage": "dashboard_thumbnail_4.jpg",
+			"BackgroundColor": "#B31250",
+			"Icon": "\ue24d"
+		}, {
+			"Name": "Dashboards",
+			"BackgroundImage": "dashboard_thumbnail_3.jpg",
+			"BackgroundColor": "#CD195E",
+			"Icon": "\ue871"
+		}, {
+			"Name": "Navigation",
+			"BackgroundImage": "dashboard_thumbnail_2.jpg",
+			"BackgroundColor": "#56329A",
+			"Icon": "\ue5d2"
+		}, {
+			"Name": "Logins",
+			"BackgroundImage": "dashboard_thumbnail_5.jpg",
+			"BackgroundColor": "#6A40B9",
+			"Icon": "\ue897"
+		}, {
+			"Name": "Ecommerce",
+			"BackgroundImage": "dashboard_thumbnail_1.jpg",
+			"BackgroundColor": "#7C4ECD",
+			"Icon": "\ue8cc"
+		}, {
+			"Name": "Walkthroughs",
+			"BackgroundImage": "dashboard_thumbnail_7.jpg",
+			"BackgroundColor": "#525ABB",
+			"Icon": "\ue8eb"
+		}, {
+			"Name": "Messages",
+			"BackgroundImage": "dashboard_thumbnail_8.jpg",
+			"BackgroundColor": "#5F7DD4",
+			"Icon": "\ue0be"
+		}, {
+			"Name": "Grial Theme",
+			"BackgroundImage": "dashboard_thumbnail_0.jpg",
+			"BackgroundColor": "#7B96E5",
+			"Icon": "\ue3b7"
+		}]
+	},
+	"DashboardFlatPage.xaml": {
+		"Items": [{
+			"Name": "Social",
+			"BackgroundImage": "dashboard_thumbnail_6.jpg",
+			"BackgroundColor": "#921243",
+			"Icon": "\ue7fd"
+		}, {
+			"Name": "Articles",
+			"BackgroundImage": "dashboard_thumbnail_4.jpg",
+			"BackgroundColor": "#B31250",
+			"Icon": "\ue24d"
+		}, {
+			"Name": "Dashboards",
+			"BackgroundImage": "dashboard_thumbnail_3.jpg",
+			"BackgroundColor": "#CD195E",
+			"Icon": "\ue871"
+		}, {
+			"Name": "Navigation",
+			"BackgroundImage": "dashboard_thumbnail_2.jpg",
+			"BackgroundColor": "#56329A",
+			"Icon": "\ue5d2"
+		}, {
+			"Name": "Logins",
+			"BackgroundImage": "dashboard_thumbnail_5.jpg",
+			"BackgroundColor": "#6A40B9",
+			"Icon": "\ue897"
+		}, {
+			"Name": "Ecommerce",
+			"BackgroundImage": "dashboard_thumbnail_1.jpg",
+			"BackgroundColor": "#7C4ECD",
+			"Icon": "\ue8cc"
+		}, {
+			"Name": "Walkthroughs",
+			"BackgroundImage": "dashboard_thumbnail_7.jpg",
+			"BackgroundColor": "#525ABB",
+			"Icon": "\ue8eb"
+		}, {
+			"Name": "Messages",
+			"BackgroundImage": "dashboard_thumbnail_8.jpg",
+			"BackgroundColor": "#5F7DD4",
+			"Icon": "\ue0be"
+		}, {
+			"Name": "Grial Theme",
+			"BackgroundImage": "dashboard_thumbnail_0.jpg",
+			"BackgroundColor": "#7B96E5",
+			"Icon": "\ue3b7"
+		}]
+	},
+	"DashboardWithImagesPage.xaml": {
+		"Items": [{
+			"Name": "Social",
+			"BackgroundImage": "dashboard_thumbnail_6.jpg",
+			"Icon": "\ue7fd"
+		}, {
+			"Name": "Articles",
+			"BackgroundImage": "dashboard_thumbnail_4.jpg",
+			"Icon": "\ue24d"
+		}, {
+			"Name": "Dashboards",
+			"BackgroundImage": "dashboard_thumbnail_3.jpg",
+			"Icon": "\ue871"
+		}, {
+			"Name": "Navigation",
+			"BackgroundImage": "dashboard_thumbnail_2.jpg",
+			"Icon": "\ue5d2"
+		}, {
+			"Name": "Logins",
+			"BackgroundImage": "dashboard_thumbnail_5.jpg",
+			"Icon": "\ue897"
+		}, {
+			"Name": "Ecommerce",
+			"BackgroundImage": "dashboard_thumbnail_1.jpg",
+			"Icon": "\ue8cc"
+		}, {
+			"Name": "Walkthroughs",
+			"BackgroundImage": "dashboard_thumbnail_7.jpg",
+			"Icon": "\ue8eb"
+		}, {
+			"Name": "Messages",
+			"BackgroundImage": "dashboard_thumbnail_8.jpg",
+			"Icon": "\ue0be"
+		}, {
+			"Name": "Grial Theme",
+			"BackgroundImage": "dashboard_thumbnail_0.jpg",
+			"Icon": "\ue3b7"
+		}]
+	},
+	"RecentChatItemTemplate.xaml": {
+		"From": {
+			"Name": "Pat Davies",
+			"Avatar": "friend_thumbnail_27.jpg"
+		},
+		"When": "July 7",
+		"Body": "Hey there! Grial 2...",
+		"IsRead": "true"
+	},
+    "DocumentTimelineLeftItemTemplate.xaml": {
+		"When": "July 7",
+		"Title": "Hey buddy :), what's up? I'm currently working on this amazing stuff called Grial. Have you heard about it? You shoud give it a try....it really rocks!!!!!.",
+		"Author" : "Chris Duff",
+		"IsInbound": "true",
+		"Icon" : "\ue0be"
+	},
+	"DocumentTimelineRightItemTemplate.xaml": {
+		"When": "July 7",
+		"Title": "Hey buddy :), what's up? I'm currently working on this amazing stuff called Grial. Have you heard about it? You shoud give it a try....it really rocks!!!!!.",
+		"Author" : "Tony Kamo",
+		"IsInbound": "true",
+		"Icon" : "\ue0be"
+	},
+	"ProductGridItemTemplate.xaml": {
+		"Name": "Logo Tee",
+		"Image": "product_item_0.jpg",
+		"Price": "$39",
+		"ThumbnailHeight": "100",
+		"Manufacturer": "UXDIVERS"
+	},
+	"SocialGalleryImagePreviewPage.xaml": {
+		"source": "social_album_1.jpg"
+	},
+	"FriendItemTemplate.xaml": {
+		"Avatar": "friend_thumbnail_31.jpg",
+		"Name": "Robert Stainford"
+	},
+	"ProductItemViewPage.xaml": {
+		"Name": "LOGO TEE",
+		"Description": "Classic 90's Skateboarding style shirt. Feel like Pat Duffy or even flow like Edie from Pearl Jam. With that casual grunge style this is the shirt you need.",
+		"Image": "product_item_0.jpg",
+		"Price": "$ 39.99",
+		"ThumbnailHeight": "100",
+		"Manufacturer": "UXDIVERS"
+	},
+    "ProductItemFullScreenPage.xaml": {
+		"Name": "LOGO TEE",
+		"Description": "Classic 90's Skateboarding style shirt. Feel like Pat Duffy or even flow like Edie from Pearl Jam. With that casual grunge style this is the shirt you need.",
+		"Image": "product_item_2.jpg",
+		"Price": "$ 39.99",
+		"ThumbnailHeight": "100",
+		"Manufacturer": "UXDIVERS"
+	},
+	"ProductImageFullScreenPage.xaml": {
+		"source": "product_item_0.jpg"
+	},
+	"MessageItemTemplate.xaml": {
+		"From": {
+			"Name": "Janis Spector",
+			"IsRead": "false",
+			"ThreadCount": "7",
+			"HasAttachment": "true",
+			"Title": "Hi dear friend",
+			"Avatar": "friend_thumbnail_31.jpg"
+		},
+		"Body": "Hey buddy :), what's up? I'm currently working on this amazing stuff called Grial. Have you heard about it? You shoud give it a try....it really rocks!!!!!.",
+		"When": "July 7"
+	},
+	"ChatLeftMessageItemTemplate.xaml": {
+		"From": {
+			"Name": "Janis Spector",
+			"Avatar": "friend_thumbnail_31.jpg"
+		},
+		"Body": "Hey buddy :), what's up? I'm currently working on this amazing stuff called Grial. Have you heard about it? You shoud give it a try....it really rocks!!!!!.",
+		"When": "July 7"
+	},
+	"ChatRightMessageItemTemplate.xaml": {
+		"From": {
+			"Name": "Janis Spector",
+			"Avatar": "friend_thumbnail_34.jpg"
+		},
+		"When": "July 7",
+		"Body": "Hey buddy :), what's up? I'm currently working on this amazing stuff called Grial. Have you heard about it? You shoud give it a try....it really rocks!!!!!."
+	},
+	"MessagesListPage.xaml": {
+		"SampleData": {
+			"Messages": [{
+				"From": {
+					"Name": "Janis Spector",
+					"Avatar": "friend_thumbnail_31.jpg"
+				},
+				"ThreadCount": "7",
+				"HasAttachment": "true",
+				"When": "July 7",
+				"Title": "Hi dear friend",
+				"Body": "Hey buddy :), what's up? I'm currently working on this amazing stuff called Grial. Have you heard about it? You shoud give it a try....it really rocks!!!!!.",
+				"IsRead": "false"
+			}]
+		}
+	},
+	"ChatMessagesListPage.xaml": {
+		"When": "July 7"
+	},
+	"RecentChatListPage.xaml": {
+		"Messages": [{
+			"From": {
+				"Name": "Pat Davies",
+				"Avatar": "friend_thumbnail_27.jpg"
+			},
+			"When": "July 7",
+			"Body": "Hey there! Grial 2.0.",
+			"IsRead": "false"
+		}, {
+			"From": {
+				"Name": "Janis Spector",
+				"Avatar": "friend_thumbnail_31.jpg"
+			},
+			"When": "July 7",
+			"Body": "Hey buddy :), what's up? I'm currently working on this amazing stuff called Grial. Have you heard about it? You shoud give it a try....it really rocks!!!!!.",
+			"IsRead": "true"
+		}],
+		"ChatList": [{
+			"Name": "Pat Davies",
+			"Avatar": "friend_thumbnail_27.jpg",
+			"Message": "Hey there! Grial 2...",
+			"IsRead": "true",
+			"MessageStateColor": "#43a047",
+			"When": "21:16"
+		}, {
+			"Name": "Janis Spector",
+			"Avatar": "friend_thumbnail_31.jpg",
+			"Message": "Yes..",
+			"IsRead": "false",
+			"MessageStateColor": "#90a4ae",
+			"When": "20:26"
+		}]
+	},
+	"ArticlesListPage.xaml": {
+		"PostsList": [{
+			"Title": "United by faith ",
+			"Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. \nSed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. \n\nMaecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+			"Section": "ACTUALITY",
+			"Author": "UXDIVERS",
+			"Avatar": "friend_thumbnail_55.jpg",
+			"BackgroundImage": "article_image_0.jpg",
+			"Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+			"QuoteAuthor": "Jaco Morrison",
+			"When": "JUN 17, 2015",
+			"Likes": "92",
+			"Followers": "2.4K"
+		}, {
+			"Title": "Olympic dream",
+			"Body": "In connection with this appellative of 'Whalebone whales,' it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+			"Section": "SPORTS",
+			"Author": "Pat Davies",
+			"Avatar": "friend_thumbnail_27.jpg",
+			"BackgroundImage": "article_image_1.jpg",
+			"When": "JUN 17, 2015"
+		}, {
+			"Title": "Wheels of fortune",
+			"BackgroundImage": "article_image_2.jpg",
+			"Section": "FREE TIME",
+			"Author": "Cassy Norton",
+			"Avatar": "friend_thumbnail_93.jpg",
+			"When": "JUN 17, 2015"
+		}, {
+			"Title": "Last adventure",
+			"BackgroundImage": "article_image_3.jpg",
+			"Section": "SCIENCE",
+			"Author": "Margaret Whites",
+			"Avatar": "friend_thumbnail_71.jpg",
+			"When": "JUN 17, 2015"
+		}]
+	},
+	"ArticlesFeedPage.xaml": {
+		"PostsList": [{
+			"Title": "United by faith ",
+			"Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. \nSed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. \n\nMaecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+			"Section": "ACTUALITY",
+			"Author": "UXDIVERS",
+			"Avatar": "friend_thumbnail_55.jpg",
+			"BackgroundImage": "article_image_0.jpg",
+			"Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+			"QuoteAuthor": "Jaco Morrison",
+			"When": "JUN 17, 2015",
+			"Likes": "92",
+			"Followers": "2.4K"
+		}, {
+			"Title": "Olympic dream",
+			"Body": "In connection with this appellative of 'Whalebone whales,' it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+			"Section": "SPORTS",
+			"Author": "Pat Davies",
+			"Avatar": "friend_thumbnail_27.jpg",
+			"BackgroundImage": "article_image_1.jpg",
+			"When": "JUN 17, 2015"
+		}, {
+			"Title": "Wheels of fortune",
+			"BackgroundImage": "article_image_2.jpg",
+			"Section": "FREE TIME",
+			"Author": "Cassy Norton",
+			"Avatar": "friend_thumbnail_93.jpg",
+			"When": "JUN 17, 2015"
+		}, {
+			"Title": "Last adventure",
+			"BackgroundImage": "article_image_3.jpg",
+			"Section": "SCIENCE",
+			"Author": "Margaret Whites",
+			"Avatar": "friend_thumbnail_71.jpg",
+			"When": "JUN 17, 2015"
+		}]
+	},
+	"ArticlesClassicView.xaml": {
+		"PostsList": [{
+			"Title": "United by faith ",
+			"Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. \nSed ultricies sed augue sit amet maximus.",
+			"Section": "ACTUALITY",
+			"Author": "UXDIVERS",
+			"Avatar": "friend_thumbnail_55.jpg",
+			"BackgroundImage": "article_image_0.jpg",
+			"Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+			"QuoteAuthor": "Jaco Morrison",
+			"When": "JUN 17, 2015",
+			"Likes": "92",
+			"Followers": "2.4K"
+		}, {
+			"Title": "Olympic dream",
+			"Body": "In connection with this appellative of 'Whalebone whales,' it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+			"Section": "SPORTS",
+			"Author": "Pat Davies",
+			"Avatar": "friend_thumbnail_27.jpg",
+			"BackgroundImage": "article_image_1.jpg",
+			"When": "JUN 17, 2015"
+		}, {
+			"Title": "Wheels of fortune",
+			"BackgroundImage": "article_image_2.jpg",
+			"Section": "FREE TIME",
+			"Author": "Cassy Norton",
+			"Avatar": "friend_thumbnail_93.jpg",
+			"When": "JUN 17, 2015"
+		}, {
+			"Title": "Last adventure",
+			"BackgroundImage": "article_image_3.jpg",
+			"Section": "SCIENCE",
+			"Author": "Margaret Whites",
+			"Avatar": "friend_thumbnail_71.jpg",
+			"When": "JUN 17, 2015"
+		}]
+	},
+	"SocialPage.xaml": {
+		"Friends": [{
+			"Name": "Pat Davies",
+			"Avatar": "friend_thumbnail_27.jpg"
+		}, {
+			"Name": "Janis Spector",
+			"Avatar": "friend_thumbnail_31.jpg"
+		}, {
+			"Name": "Regina Joplin",
+			"Avatar": "friend_thumbnail_34.jpg"
+		}, {
+			"Name": "Jaco Morrison",
+			"Avatar": "friend_thumbnail_55.jpg"
+		}, {
+			"Name": "Margaret Whites",
+			"Avatar": "friend_thumbnail_71.jpg"
+		}, {
+			"Name": "Skyler Harrisson",
+			"Avatar": "friend_thumbnail_75.jpg"
+		}, {
+			"Name": "Al Pastorius",
+			"Avatar": "friend_thumbnail_93.jpg"
+		}],
+		"Images": [
+			"social_album_1.jpg",
+			"social_album_2.jpg",
+			"social_album_3.jpg",
+			"social_album_4.jpg",
+			"social_album_5.jpg",
+			"social_album_6.jpg",
+			"social_album_7.jpg",
+			"social_album_8.jpg",
+			"social_album_9.jpg"
+		]
+	},
+	"SocialVariantPage.xaml": {
+		"Friends": [{
+			"Name": "Pat Davies",
+			"Avatar": "friend_thumbnail_27.jpg"
+		}, {
+			"Name": "Janis Spector",
+			"Avatar": "friend_thumbnail_31.jpg"
+		}, {
+			"Name": "Regina Joplin",
+			"Avatar": "friend_thumbnail_34.jpg"
+		}, {
+			"Name": "Jaco Morrison",
+			"Avatar": "friend_thumbnail_55.jpg"
+		}, {
+			"Name": "Margaret Whites",
+			"Avatar": "friend_thumbnail_71.jpg"
+		}, {
+			"Name": "Skyler Harrisson",
+			"Avatar": "friend_thumbnail_75.jpg"
+		}, {
+			"Name": "Al Pastorius",
+			"Avatar": "friend_thumbnail_93.jpg"
+		}],
+		"Images": [
+			"social_album_1.jpg",
+			"social_album_2.jpg",
+			"social_album_3.jpg",
+			"social_album_4.jpg",
+			"social_album_5.jpg",
+			"social_album_6.jpg",
+			"social_album_7.jpg",
+			"social_album_8.jpg",
+			"social_album_9.jpg"
+		]
+	},
+	"MainMenuPage.xaml": {
+		"AllSamples": {
+			"Count": "54"
+		},
+		"SamplesGroupedByCategory*": [{
+			"Name": "SOCIAL",
+			"Items": [{
+				"Name": "User Profile",
+				"Icon": "\ue853",
+				"IsNew": "false"
+			}, {
+				"Name": "Social",
+				"Icon": "\ue7ef",
+				"IsNew": "false"
+			}, {
+				"Name": "Social Variant",
+				"Icon": "\ue7ef",
+				"IsNew": "false"
+			}, {
+				"Name": "Timeline",
+				"Icon": "\ue8ae",
+				"IsNew": "true"
+			}, {
+				"Name": "Document Timeline",
+				"Icon": "\ue8ae",
+				"IsNew": "true"
+			}]
+		}, {
+			"Name": "ARTICLES",
+			"Items": [{
+				"Name": "Article View",
+				"Icon": "\ue24d",
+				"IsNew": "false"
+			}, {
+				"Name": "Articles List",
+				"Icon": "\ue24d",
+				"IsNew": "false"
+			}, {
+				"Name": "Articles List Variant",
+				"Icon": "\ue24d",
+				"IsNew": "false"
+			}, {
+				"Name": "Articles Feed",
+				"Icon": "\ue24d",
+				"IsNew": "false"
+			}, {
+				"Name": "Articles Classic View",
+				"Icon": "\ue24d",
+				"IsNew": "true"
+			}, {
+				"Name": "Front Page News",
+				"Icon": "\ue24d",
+				"IsNew": "true"
+			}]
+		}, {
+			"Name": "DASHBOARD",
+			"Items": [{
+				"Name": "Icons Dashboard",
+				"Icon": "\ue871",
+				"IsNew": "false"
+			}, {
+				"Name": "Flat Dashboard",
+				"Icon": "\ue871",
+				"IsNew": "false"
+			}, {
+				"Name": "Images Dashboard",
+				"Icon": "\ue871",
+				"IsNew": "false"
+			}, {
+				"Name": "Dashboard Multiple Tiles",
+				"Icon": "\ue871",
+				"IsNew": "true"
+			}, {
+				"Name": "Dashboard Scrollable",
+				"Icon": "\ue871",
+				"IsNew": "true"
+			}, {
+				"Name": "Dashboard Multiple Scroll",
+				"Icon": "\ue871",
+				"IsNew": "true"
+			}, {
+				"Name": "Movie Selection",
+				"Icon": "\ue54d",
+				"IsNew": "true"
+			}, {
+				"Name": "Dashboard Cards",
+				"Icon": "\ue871",
+				"IsNew": "true"
+			}]
+		}, {
+			"Name": "NAVIGATION",
+			"Items": [{
+				"Name": "RootPage",
+				"Icon": "\ue5d2",
+				"IsNew": "false"
+			}, {
+				"Name": "Categories List Flat",
+				"Icon": "\ue896",
+				"IsNew": "false"
+			}, {
+				"Name": "Image Categories",
+				"Icon": "\ue896",
+				"IsNew": "false"
+			}, {
+				"Name": "Icon Categories",
+				"Icon": "\ue896",
+				"IsNew": "false"
+			}, {
+				"Name": "Custom NavBar",
+				"Icon": "\ue069",
+				"IsNew": "false"
+			}, {
+				"Name": "Empty State",
+				"Icon": "\ue88c",
+				"IsNew": "true"
+			}, {
+				"Name": "Notifications",
+				"Icon": "\ue417",
+				"IsNew": "true"
+			}]
+		}, {
+			"Name": "LOGINS",
+			"Items": [{
+				"Name": "Login",
+				"Icon": "\ue897",
+				"IsNew": "false"
+			}, {
+				"Name": "Sign Up",
+				"Icon": "\ue86c",
+				"IsNew": "false"
+			}, {
+				"Name": "Password Recovery",
+				"Icon": "\ue8ba",
+				"IsNew": "false"
+			}, {
+				"Name": "Simple Sign Up",
+				"Icon": "\ue86c",
+				"IsNew": "true"
+			}, {
+				"Name": "Simple Login",
+				"Icon": "\ue86c",
+				"IsNew": "true"
+			}]
+		}, {
+			"Name": "ECOMMERCE",
+			"Items": [{
+				"Name": "Product Grid",
+				"Icon": "\ue8f0",
+				"IsNew": "false"
+			}, {
+				"Name": "Product Grid Variant",
+				"Icon": "\ue8f0",
+				"IsNew": "false"
+			}, {
+				"Name": "Product Item View",
+				"Icon": "\ue8f6",
+				"IsNew": "false"
+			}, {
+				"Name": "Products Carousel",
+				"Icon": "\ue8f6",
+				"IsNew": "false"
+			}, {
+				"Name": "Products Catalog",
+				"Icon": "\ue8f6",
+				"IsNew": "true"
+			}, {
+				"Name": "Product Order",
+				"Icon": "\ue8f6",
+				"IsNew": "true"
+			}]
+		}, {
+			"Name": "WALKTHROUGHS",
+			"Items": [{
+				"Name": "Walkthrough",
+				"Icon": "\ue8eb",
+				"IsNew": "false"
+			}, {
+				"Name": "Walkthrough Variant",
+				"Icon": "\ue8eb",
+				"IsNew": "false"
+			}, {
+				"Name": "Walkthrough Flat",
+				"Icon": "\ue8eb",
+				"IsNew": "true"
+			}]
+		}, {
+			"Name": "MESSAGES",
+			"Items": [{
+				"Name": "Messages",
+				"Icon": "\ue0be",
+				"IsNew": "false"
+			}, {
+				"Name": "Chat Messages List",
+				"Icon": "\ue926",
+				"IsNew": "false"
+			}, {
+				"Name": "Recent Chat List",
+				"Icon": "\ue8ae",
+				"IsNew": "true"
+			}, {
+				"Name": "Chat Timeline",
+				"Icon": "\ue8ae",
+				"IsNew": "true"
+			}]
+		}, {
+			"Name": "GRIAL THEME",
+			"Items": [{
+				"Name": "Native Controls",
+				"Icon": "\ue3b7",
+				"IsNew": "false"
+			}, {
+				"Name": "Custom Renderers",
+				"Icon": "\ue3b7",
+				"IsNew": "false"
+			}, {
+				"Name": "Grial Common Views",
+				"Icon": "\ue3b7",
+				"IsNew": "false"
+			}, {
+				"Name": "Settings Page",
+				"Icon": "\ue8b8",
+				"IsNew": "false"
+			}, {
+				"Name": "About",
+				"Icon": "\ue80b",
+				"IsNew": "false"
+			}, {
+				"Name": "Tabs",
+				"Icon": "\ue8d8",
+				"IsNew": "true"
+			}, {
+				"Name": "Generic About",
+				"Icon": "\ue887",
+				"IsNew": "false"
+			}, {
+				"Name": "Custom Settings Page",
+				"Icon": "\ue8b8",
+				"IsNew": "true"
+			}, {
+				"Name": "Custom Activity Indicator",
+				"Icon": "\ue028",
+				"IsNew": "true"
+			}, {
+				"Name": "Responsive Helpers",
+				"Icon": "\ue8b8",
+				"IsNew": "true"
+			}]
+		}]
+	},
+	"SamplesListFromCategoryPage.xaml": {
+		"SamplesList": [{
+			"Name": "Category Item 1.0 ",
+			"Icon": "\ue5d2",
+			"BackgroundImage": ""
+		}, {
+			"Name": "Category Item 1.1",
+			"Icon": "\ue5d2",
+			"BackgroundImage": ""
+		}]
+	},
+	"SamplesListFromCategoryItemTemplate.xaml": {
+		"Name": "Category Item 1.0 ",
+		"Icon": "\ue5d2"
+	},
+	"ArticleClassicViewItemTemplate.xaml": {
+		"Title": "United by faith ",
+		"Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. \nSed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. \n\nMaecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+		"Section": "ACTUALITY",
+		"Author": "UXDIVERS",
+		"Avatar": "friend_thumbnail_55.jpg",
+		"BackgroundImage": "article_image_0.jpg",
+		"Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+		"QuoteAuthor": "Jaco Morrison",
+		"When": "JUN 17, 2015",
+		"Likes": "92",
+		"Followers": "2.4K"
+	},
+	"TimelineItemTemplate.xaml": {
+		"EventTitle": "Pat Davies joined our team!",
+		"EventDescription": "Pat Davies joined our team!",
+		"Image": "friend_thumbnail_27.jpg",
+		"When": "AUG 05, 2015"
+	},
+	"TimelinePage.xaml": {
+		"TimelineList": [{
+			"EventTitle": "Eric Douglas has a new photo",
+			"EventDescription": "Eric uploaded a more recently pic from him.",
+			"Image": "friend_thumbnail_27.jpg",
+			"When": "JUN 29, 2016"
+		}, {
+			"EventTitle": "Sam joined a new group",
+			"EventDescription": "Sam joined the Marketing and Affiliates group",
+			"Image": "friend_thumbnail_34.jpg",
+			"When": "JUN 28, 2016"
+		}, {
+			"EventTitle": "You have a new follower!",
+			"EventDescription": "Tony is now folowing you.",
+			"Image": "friend_thumbnail_55.jpg",
+			"When": "JUN 17, 2016"
+		}, {
+			"EventTitle": "You have a new follower!",
+			"EventDescription": "Ingrid Davies is now followig you.",
+			"Image": "friend_thumbnail_71.jpg",
+			"When": "JUN 17, 2016"
+		}, {
+			"EventTitle": "You have a new like!",
+			"EventDescription": "Emily liked your last post!",
+			"Image": "friend_thumbnail_75.jpg",
+			"When": "JUN 14, 2016"
+		}, {
+			"EventTitle": "Jaco joined a new group!",
+			"EventDescription": "Jaco Davies has joined the Internet of Things group. He is now the member number 100 of this group.",
+			"Image": "friend_thumbnail_93.jpg",
+			"When": "JUN 14, 2016"
+		}, {
+			"EventTitle": "Jaco added a new comment to 'Internet of Things' group",
+			"EventDescription": "Hi guys, thanks for allow me be part of this great group. I would like to suggest...",
+			"Image": "friend_thumbnail_93.jpg",
+			"When": "JUN 14, 2016"
+		}, {
+			"EventTitle": "Ingrid have a new like!",
+			"EventDescription": "Jaco liked your last post.",
+			"Image": "friend_thumbnail_71.jpg",
+			"When": "JUN 14, 2016"
+		}, {
+			"EventTitle": "Eric Douglas joined a new group!",
+			"EventDescription": "Eric has joined the Jazz and Blues group. He is now the member number 207 of this group.",
+			"Image": "friend_thumbnail_27.jpg",
+			"When": "JUN 12, 2016"
+		}, {
+			"EventTitle": "You have a new like!",
+			"EventDescription": "Emily liked your last post!",
+			"Image": "friend_thumbnail_75.jpg",
+			"When": "JUN 12, 2016"
+		}, {
+			"EventTitle": "You have a new like!",
+			"EventDescription": "Sam liked your last post!",
+			"Image": "friend_thumbnail_34.jpg",
+			"When": "JUN 12, 2016"
+		}, {
+			"EventTitle": "Sam joined a new group!",
+			"EventDescription": "Sam has joined the Avant Garde group. She is now the member number 99 of this group.",
+			"Image": "friend_thumbnail_27.jpg",
+			"When": "JUN 12, 2016"
+		}, {
+			"EventTitle": "Sam joined a new group!",
+			"EventDescription": "Sam has joined the Bon Apetite! group. She is now the member number 487 of this group.",
+			"Image": "friend_thumbnail_27.jpg",
+			"When": "JUN 12, 2016"
+		}, {
+			"EventTitle": "Ingrid have a new like!",
+			"EventDescription": "Jaco liked your last post.",
+			"Image": "friend_thumbnail_71.jpg",
+			"When": "JUN 11, 2016"
+		}]
+	},
+	"MainMenuItemTemplate.xaml": {
+		"Name": "Dashboard Multiple Scroll Page",
+		"BackgroundImage": "dashboard_thumbnail_6.jpg",
+		"BackgroundColor": "#921243",
+		"Icon": "\ue871",
+		"IsNew": "true"
+	},
+	"MainMenuGroupHeaderTemplate.xaml": {
+		"Name": "SOCIAL"
+	},
+
+	"CardsListItemTemplate.xaml": {
+		"Name": "Social",
+		"BackgroundColor": "#921243",
+		"BackgroundImage": "dashboard_thumbnail_0.jpg",
+		"Icon": "\ue7fd",
+		"SamplesList": {
+			"Count": "5"
+		}
+	},
+
+	"CategoriesListItemTemplate.xaml": {
+		"Name": "Social",
+		"BackgroundColor": "#921243",
+		"BackgroundImage": "dashboard_thumbnail_0.jpg",
+		"Icon": "\ue7fd",
+		"SamplesList": {
+			"Count": "5"
+		}
+	},
+	"CategoriesListFlatPage.xaml": {
+		"SamplesCategories": [{
+			"Name": "Social",
+			"BackgroundColor": "#921243",
+			"BackgroundImage": "dashboard_thumbnail_0.jpg",
+			"Icon": "\ue7fd",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Articles",
+			"BackgroundColor": "#B31250",
+			"BackgroundImage": "dashboard_thumbnail_1.jpg",
+			"Icon": "\ue3b7",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Social",
+			"BackgroundColor": "#CD195E",
+			"BackgroundImage": "dashboard_thumbnail_2.jpg",
+			"Icon": "\ue24d",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Dashboards",
+			"BackgroundColor": "#56329A",
+			"BackgroundImage": "dashboard_thumbnail_3.jpg",
+			"Icon": "\ue871",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Navigation",
+			"BackgroundColor": "#6A40B9",
+			"BackgroundImage": "dashboard_thumbnail_4.jpg",
+			"Icon": "\ue5d2",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Logins",
+			"BackgroundColor": "#7C4ECD",
+			"BackgroundImage": "dashboard_thumbnail_5.jpg",
+			"Icon": "\ue897",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Ecommerce",
+			"BackgroundColor": "#525ABB",
+			"BackgroundImage": "dashboard_thumbnail_6.jpg",
+			"Icon": "\ue8cc",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Walkthroughs",
+			"BackgroundColor": "#5F7DD4",
+			"BackgroundImage": "dashboard_thumbnail_0.jpg",
+			"Icon": "\ue8eb",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Messages",
+			"BackgroundColor": "#7B96E5",
+			"BackgroundImage": "dashboard_thumbnail_1.jpg",
+			"Icon": "\ue0be",
+			"SamplesList": [
+
+			]
+		}]
+	},
+	"CardsListPage.xaml": {
+		"SamplesCategories": [{
+			"Name": "Social",
+			"BackgroundColor": "#921243",
+			"BackgroundImage": "dashboard_thumbnail_0.jpg",
+			"Icon": "\ue7fd",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Articles",
+			"BackgroundColor": "#B31250",
+			"BackgroundImage": "dashboard_thumbnail_1.jpg",
+			"Icon": "\ue3b7",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Social",
+			"BackgroundColor": "#CD195E",
+			"BackgroundImage": "dashboard_thumbnail_2.jpg",
+			"Icon": "\ue24d",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Dashboards",
+			"BackgroundColor": "#56329A",
+			"BackgroundImage": "dashboard_thumbnail_3.jpg",
+			"Icon": "\ue871",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Navigation",
+			"BackgroundColor": "#6A40B9",
+			"BackgroundImage": "dashboard_thumbnail_4.jpg",
+			"Icon": "\ue5d2",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Logins",
+			"BackgroundColor": "#7C4ECD",
+			"BackgroundImage": "dashboard_thumbnail_5.jpg",
+			"Icon": "\ue897",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Ecommerce",
+			"BackgroundColor": "#525ABB",
+			"BackgroundImage": "dashboard_thumbnail_6.jpg",
+			"Icon": "\ue8cc",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Walkthroughs",
+			"BackgroundColor": "#5F7DD4",
+			"BackgroundImage": "dashboard_thumbnail_0.jpg",
+			"Icon": "\ue8eb",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Messages",
+			"BackgroundColor": "#7B96E5",
+			"BackgroundImage": "dashboard_thumbnail_1.jpg",
+			"Icon": "\ue0be",
+			"SamplesList": [
+
+			]
+		}]
+	},
+	"CategoriesListWithImagesItemTemplate.xaml": {
+		"Name": "Social",
+		"BackgroundColor": "#921243",
+		"BackgroundImage": "dashboard_thumbnail_0.jpg",
+		"Icon": "\ue7fd",
+		"SamplesList": {
+			"Count": "7"
+		}
+	},
+	"CategoriesListWithImagesPage.xaml": {
+		"SamplesCategories": [{
+			"Name": "Social",
+			"BackgroundColor": "#921243",
+			"BackgroundImage": "dashboard_thumbnail_0.jpg",
+			"Icon": "\ue7fd",
+			"SamplesList": {
+				"Count": "7"
+			}
+		}, {
+			"Name": "Articles",
+			"BackgroundColor": "#B31250",
+			"BackgroundImage": "dashboard_thumbnail_1.jpg",
+			"Icon": "\ue24d",
+			"SamplesList": {
+				"Count": "7"
+			}
+		}, {
+			"Name": "Social",
+			"BackgroundColor": "#CD195E",
+			"BackgroundImage": "dashboard_thumbnail_2.jpg",
+			"Icon": "\ue24d",
+			"SamplesList": {
+				"Count": "7"
+			}
+		}, {
+			"Name": "Dashboards",
+			"BackgroundColor": "#56329A",
+			"BackgroundImage": "dashboard_thumbnail_3.jpg",
+			"Icon": "\ue871",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Navigation",
+			"BackgroundColor": "#6A40B9",
+			"BackgroundImage": "dashboard_thumbnail_4.jpg",
+			"Icon": "\ue5d2",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Logins",
+			"BackgroundColor": "#7C4ECD",
+			"BackgroundImage": "dashboard_thumbnail_5.jpg",
+			"Icon": "\ue897",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Ecommerce",
+			"BackgroundColor": "#525ABB",
+			"BackgroundImage": "dashboard_thumbnail_6.jpg",
+			"Icon": "\ue8cc",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Walkthroughs",
+			"BackgroundColor": "#5F7DD4",
+			"BackgroundImage": "dashboard_thumbnail_0.jpg",
+			"Icon": "\ue8eb",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Messages",
+			"BackgroundColor": "#7B96E5",
+			"BackgroundImage": "dashboard_thumbnail_1.jpg",
+			"Icon": "\ue0be",
+			"SamplesList": [
+
+			]
+		}]
+	},
+	"CategoriesListWithIconsPage.xaml": {
+		"SamplesCategories": [{
+			"Name": "Social",
+			"BackgroundColor": "#921243",
+			"BackgroundImage": "dashboard_thumbnail_0.jpg",
+			"Icon": "\ue7fd",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Articles",
+			"BackgroundColor": "#B31250",
+			"BackgroundImage": "dashboard_thumbnail_1.jpg",
+			"Icon": "\ue24d",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Social",
+			"BackgroundColor": "#CD195E",
+			"BackgroundImage": "dashboard_thumbnail_2.jpg",
+			"Icon": "\ue24d",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Dashboards",
+			"BackgroundColor": "#56329A",
+			"BackgroundImage": "dashboard_thumbnail_3.jpg",
+			"Icon": "\ue871",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Navigation",
+			"BackgroundColor": "#6A40B9",
+			"BackgroundImage": "dashboard_thumbnail_4.jpg",
+			"Icon": "\ue5d2",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Logins",
+			"BackgroundColor": "#7C4ECD",
+			"BackgroundImage": "dashboard_thumbnail_5.jpg",
+			"Icon": "\ue897",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Ecommerce",
+			"BackgroundColor": "#525ABB",
+			"BackgroundImage": "dashboard_thumbnail_6.jpg",
+			"Icon": "\ue8cc",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Walkthroughs",
+			"BackgroundColor": "#5F7DD4",
+			"BackgroundImage": "dashboard_thumbnail_0.jpg",
+			"Icon": "\ue8eb",
+			"SamplesList": [
+
+			]
+		}, {
+			"Name": "Messages",
+			"BackgroundColor": "#7B96E5",
+			"BackgroundImage": "dashboard_thumbnail_1.jpg",
+			"Icon": "\ue0be",
+			"SamplesList": [
+
+			]
+		}]
+	},
+	"NotificationsListItemTemplate.xaml": {
+		"Title": "Confirmation",
+		"Description": "Please confirm your email address",
+		"BackgroundColor": "Red",
+		"Icon": "\uf0e0",
+		"SamplesList": {
+			"Count": "7"
+		}
+	},
+	"NotificationsPage.xaml": {
+		"Notifications": [{
+			"Title": "Confirmation",
+			"Description": "Please confirm your email address",
+			"BackgroundColor": "#1976d2",
+			"Type": 0
+		}, {
+			"Title": "Error",
+			"Description": "Your account is blocked",
+			"BackgroundColor": "#c62828",
+			"Type": 3
+		}, {
+			"Title": "Warning",
+			"Description": "Can't reach your current location",
+			"BackgroundColor": "#fbc02d",
+			"Type": 4
+		}, {
+			"Title": "Warning",
+			"Description": "Please contact support center",
+			"BackgroundColor": "#ffd600",
+			"Type": 4
+		}, {
+			"Title": "Notification",
+			"Description": "You have new message",
+			"BackgroundColor": "#1976d2",
+			"Type": 1
+		}, {
+			"Title": "Notification",
+			"Description": "New contact request",
+			"BackgroundColor": "#1976d2",
+			"Type": 1
+		}, {
+			"Title": "Success",
+			"Description": "Profile information completed",
+			"BackgroundColor": "#2e7d32",
+			"Type": 2
+		}, {
+			"Title": "Success",
+			"Description": "Payment method accepted",
+			"BackgroundColor": "#2e7d32",
+			"Type": 2
+		}, {
+			"Title": "Warning",
+			"Description": "Please contact support center",
+			"BackgroundColor": "#fbc02d",
+			"Type": 4
+		}]
+	},
+	"CategoriesListWithIconsItemTemplate.xaml": {
+		"Name": "Social",
+		"BackgroundColor": "#921243",
+		"BackgroundImage": "dashboard_thumbnail_0.jpg",
+		"Icon": "\ue7fd",
+		"SamplesList": [
+
+		]
+	},
+	"ProductsCarouselPage.xaml": {
+		"Data": {
+			"Name": "Logo Tee",
+			"Description": "Cotton blend lends for ultimate comfort.",
+			"Image": "product_item_0.jpg",
+			"Price": "$39",
+			"ThumbnailHeight": "100",
+			"Manufacturer": "UXdivers"
+		}
+	},
+	"ProductsCatalogPage.xaml": [{
+			"Name": "Logo Tee",
+			"Description": "Cotton/ploy blend lends for ultimate comfort.",
+			"Image": "product_item_0.jpg",
+			"Price": "$39",
+			"RatingValue": "3",
+			"RatingMax": "5",
+			"ThumbnailHeight": "100"
+		}, {
+			"Name": "Big Logo Shirt",
+			"Description": "This Logo UA Tech T-Shirt is built with a system that wicks away sweat to keep your little one dry and comfortable.",
+			"Image": "product_item_1.jpg",
+			"Price": "$29",
+			"RatingValue": "3",
+			"RatingMax": "5",
+			"ThumbnailHeight": "100"
+		}, {
+			"Name": "Classic Tee",
+			"Description": "The V-Neck Embroidered T-Shirt keeps you looking fresh with its simple yet classic look. 100% cotton. Imported.",
+			"Image": "product_item_2.jpg",
+			"Price": "$39",
+			"RatingValue": "3",
+			"RatingMax": "5",
+			"ThumbnailHeight": "100"
+		}, {
+			"Name": "Loose Fit Tee",
+			"Description": "Our newest swim tees with a much looser fit than traditional rash guard for yet more comfort and versatility, is well known for great fit, function and colors.",
+			"Image": "product_item_3.jpg",
+			"Price": "$29",
+			"RatingValue": "3",
+			"RatingMax": "5",
+			"ThumbnailHeight": "100"
+		}, {
+			"Name": "Cotton Tee",
+			"Description": "Standard fit tee shirt, graphic printed with soft hand ink",
+			"Image": "product_item_4.jpg",
+			"Price": "$29",
+			"RatingValue": "3",
+			"RatingMax": "5",
+			"ThumbnailHeight": "100"
+		}, {
+			"Name": "Sports Tee",
+			"Description": "Comfortable fit whilst the flat-seam construction helps to minimise chafing and they also feature side panels, enhancing your range of movement.",
+			"Image": "product_item_5.jpg",
+			"Price": "$39",
+			"RatingValue": "3",
+			"RatingMax": "5",
+			"ThumbnailHeight": "100"
+		}, {
+			"Name": "Classic T-Shirt",
+			"Description": "All you need for a comfort day.",
+			"Image": "product_item_6.jpg",
+			"Price": "$29",
+			"RatingValue": "3",
+			"RatingMax": "5",
+			"ThumbnailHeight": "100"
+		}, {
+			"Name": "Product Name 8",
+			"Description": "The long sleeves provide extra coverage and warmth and the sweat-wicking Dri-FIT fabric keeps you comfortable. The lightweight layer contours to your body and strategic mesh panels increase airflow. 92% polyester, 8% spandex.",
+			"Image": "product_item_7.jpg",
+			"Price": "$29",
+			"RatingValue": "3",
+			"RatingMax": "5",
+			"ThumbnailHeight": "100"
+		}]
+	,
+	"CircleIcon.xaml": {
+		"ShowBackgroundColor": "true"
+	},
+	"DashboardScrollablePage.xaml": {
+		"Items": [{
+			"Name": "Social",
+			"BackgroundImage": "dashboard_thumbnail_6.jpg",
+			"BackgroundColor": "#921243",
+			"Icon": "\ue7fd"
+		}, {
+			"Name": "Articles",
+			"BackgroundImage": "dashboard_thumbnail_4.jpg",
+			"BackgroundColor": "#B31250",
+			"Icon": "\ue24d"
+		}, {
+			"Name": "Dashboards",
+			"BackgroundImage": "dashboard_thumbnail_3.jpg",
+			"BackgroundColor": "#CD195E",
+			"Icon": "\ue871"
+		}, {
+			"Name": "Navigation",
+			"BackgroundImage": "dashboard_thumbnail_2.jpg",
+			"BackgroundColor": "#56329A",
+			"Icon": "\ue5d2"
+		}, {
+			"Name": "Logins",
+			"BackgroundImage": "dashboard_thumbnail_5.jpg",
+			"BackgroundColor": "#6A40B9",
+			"Icon": "\ue897"
+		}, {
+			"Name": "Ecommerce",
+			"BackgroundImage": "dashboard_thumbnail_1.jpg",
+			"BackgroundColor": "#7C4ECD",
+			"Icon": "\ue8cc"
+		}, {
+			"Name": "Walkthroughs",
+			"BackgroundImage": "dashboard_thumbnail_7.jpg",
+			"BackgroundColor": "#525ABB",
+			"Icon": "\ue8eb"
+		}, {
+			"Name": "Messages",
+			"BackgroundImage": "dashboard_thumbnail_8.jpg",
+			"BackgroundColor": "#5F7DD4",
+			"Icon": "\ue0be"
+		}, {
+			"Name": "Grial Theme",
+			"BackgroundImage": "dashboard_thumbnail_0.jpg",
+			"BackgroundColor": "#7B96E5",
+			"Icon": "\ue3b7"
+		}]
+	},
+	"DashboardCardItemTemplate.xaml": {
+		"BackgroundImage": "dashboard_thumbnail_0.jpg",
+		"ShowBackgroundColor": "true",
+		"Icon": "\uf0c2",
+		"Title": "United by faith ",
+		"Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. \nSed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. \n\nMaecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+		"Section": "  ACTUALITY  ",
+		"Author": "UXDIVERS",
+		"Avatar": "friend_thumbnail_55.jpg",
+		"BackgroundColor": "#B31250"
+	},
+	"DashboardCardsPage.xaml": {
+		"DashboardCardsList": [{
+			"Title": "United by faith ",
+			"Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. \nSed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. \n\nMaecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+			"Section": "  ACTUALITY  ",
+			"Author": "UXDIVERS",
+			"Avatar": "friend_thumbnail_55.jpg",
+			"BackgroundImage": "article_image_0.jpg",
+			"BackgroundColor": "#B31250"
+		}, {
+			"Title": "Olympic dream",
+			"Body": "In connection with this appellative of 'Whalebone whales,' it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+			"Section": "  SPORTS  ",
+			"Author": "Pat Davies",
+			"Avatar": "friend_thumbnail_27.jpg",
+			"BackgroundImage": "article_image_1.jpg",
+			"BackgroundColor": "#CD195E"
+		}, {
+			"Title": "Wheels of fortune",
+			"Body": "In connection with this appellative of 'Whalebone whales,' it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+			"Section": "  FREE TIME  ",
+			"Author": "Regina Joplin",
+			"Avatar": "friend_thumbnail_34.jpg",
+			"BackgroundImage": "article_image_2.jpg",
+			"BackgroundColor": "#56329A"
+		}, {
+			"Title": "Sweet leaf",
+			"Body": "In connection with this appellative of 'Whalebone whales,' it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+			"Section": "  NATURE  ",
+			"Author": "Margaret Whites",
+			"Avatar": "friend_thumbnail_71.jpg",
+			"BackgroundImage": "article_image_4.jpg",
+			"BackgroundColor": "#6A40B9"
+		}, {
+			"Title": "The search for healthy food begins",
+			"Body": "In connection with this appellative of 'Whalebone whales,' it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+			"Section": "  HEALTH  ",
+			"Author": "Skyler Harrisson",
+			"Avatar": "friend_thumbnail_75.jpg",
+			"BackgroundImage": "article_image_5.jpg",
+			"BackgroundColor": "#7C4ECD"
+		}]
+	},
+	"FrontPageNewsItemTemplate.xaml": {
+		"Title": "United by faith ",
+		"Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. \nSed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. \n\nMaecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+		"Section": "ACTUALITY",
+		"Author": "UXDIVERS",
+		"Avatar": "friend_thumbnail_55.jpg",
+		"BackgroundImage": "article_image_0.jpg",
+		"Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+		"QuoteAuthor": "Jaco Morrison",
+		"When": "JUN 17, 2015",
+		"Likes": "92",
+		"Followers": "2.4K"
+	},
+	"FrontPageHeaderItemTemplate.xaml": {
+		"MainNews": {
+			"Section": "NATURE",
+			"Author": "UXDIVERS",
+			"Avatar": "friend_thumbnail_55.jpg",
+			"BackgroundImage": "article_image_0.jpg",
+			"Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+			"QuoteAuthor": "Jaco Morrison",
+			"When": "JUN 17, 2015",
+			"Title": "United by faith ",
+			"Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. \nSed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. \n\nMaecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus."
+		}
+	},
+	"FrontPageNewsPage.xaml": {
+		"MainNews": {
+			"Title": "United by faith ",
+			"Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc. \nSed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet. \n\nMaecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+			"Section": "ACTUALITY",
+			"Author": "UXDIVERS",
+			"Avatar": "friend_thumbnail_55.jpg",
+			"BackgroundImage": "article_image_0.jpg",
+			"Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+			"QuoteAuthor": "Jaco Morrison",
+			"When": "JUN 17, 2015",
+			"Likes": "92",
+			"Followers": "2.4K"
+		},
+		"NewsList": [{
+			"Title": "Wheels of fortune",
+			"Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc.",
+			"BackgroundImage": "article_image_2.jpg",
+			"Section": "FREE TIME",
+			"Author": "Cassy Norton",
+			"Avatar": "friend_thumbnail_93.jpg",
+			"When": "JUN 17, 2015"
+		}, {
+			"Title": "Olympic dream",
+			"Body": "In connection with this appellative of 'Whalebone whales,' it is of great leap of yer happiness leadership colors.",
+			"Section": "SPORTS",
+			"Author": "Pat Davies",
+			"Avatar": "friend_thumbnail_27.jpg",
+			"BackgroundImage": "article_image_1.jpg",
+			"When": "JUN 17, 2015"
+		}, {
+			"Title": "United by faith ",
+			"Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc.",
+			"Section": "ACTUALITY",
+			"Author": "UXDIVERS",
+			"Avatar": "friend_thumbnail_55.jpg",
+			"BackgroundImage": "article_image_0.jpg",
+			"Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+			"QuoteAuthor": "Jaco Morrison",
+			"When": "JUN 17, 2015",
+			"Likes": "92",
+			"Followers": "2.4K"
+		}, {
+			"Title": "Last adventure",
+			"Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc.",
+			"BackgroundImage": "article_image_3.jpg",
+			"Section": "SCIENCE",
+			"Author": "Margaret Whites",
+			"Avatar": "friend_thumbnail_71.jpg",
+			"When": "JUN 17, 2015"
+		}]
+	},
+
+	"DashboardMultipleScrollSectionTemplate.xaml": {
+		"Title": "Actor of the Month",
+		"Content": [{
+			"Title": "Inception",
+			"Source": "http://ia.media-imdb.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+		}, {
+			"Title": "Django",
+			"Source": "http://ia.media-imdb.com/images/M/MV5BMjIyNTQ5NjQ1OV5BMl5BanBnXkFtZTcwODg1MDU4OA@@._V1_UY190_CR0,0,128,190_AL_.jpg"
+		}],
+		"Scroll": "0"
+	},
+
+	"DashboardMultipleScrollItemTemplate.xaml": {
+		"Source": "http://ia.media-imdb.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+
+
+	},
+
+	"MovieSelectionPage.xaml": {
+		"Title": "Inception",
+		"Source": "http://ia.media-imdb.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+		"Seasons": "2010",
+		"RatingValue": "4.4",
+		"RatingMax": "5",
+		"Director": "Christopher Nolan",
+		"Plot": "A thief, who steals corporate secrets through use of dream-sharing technology, is given the inverse task of planting an idea into the mind of a CEO.",
+		"Cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page "
+	},
+
+
+	"DashboardMultipleScrollPage.xaml": {
+		"Sections": [{
+			"Title": "Actor of the Month",
+			"Content": [{
+				"Title": "Inception",
+				"Source": "http://ia.media-imdb.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Django",
+				"Source": "http://ia.media-imdb.com/images/M/MV5BMjIyNTQ5NjQ1OV5BMl5BanBnXkFtZTcwODg1MDU4OA@@._V1_UY190_CR0,0,128,190_AL_.jpg"
+			}, {
+				"Title": "The Revenant",
+				"Source": "http://ia.media-imdb.com/images/M/MV5BMjU4NDExNDM1NF5BMl5BanBnXkFtZTgwMDIyMTgxNzE@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "The Departed",
+				"Source": "http://ia.media-imdb.com/images/M/MV5BMTI1MTY2OTIxNV5BMl5BanBnXkFtZTYwNjQ4NjY3._V1_UX148_CR0,0,148,216_AL_.jpg"
+			}, {
+				"Title": "Titanic",
+				"Source": "http://ia.media-imdb.com/images/M/MV5BMzg1MDA0MTU2Nl5BMl5BanBnXkFtZTcwMTMzMjkxNw@@._V1_UX148_CR0,0,148,216_AL_.jpg"
+			}, {
+				"Title": "The Audition",
+				"Source": "http://ia.media-imdb.com/images/M/MV5BODVlNGQ1ODUtYTMxNi00OTM3LTlmMzEtYjM2NzAwZTYwZTgzXkEyXkFqcGdeQXVyNjUwODIzOTI@._V1_UY268_CR4,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Gatsby",
+				"Source": "http://ia.media-imdb.com/images/M/MV5BMTkxNTk1ODcxNl5BMl5BanBnXkFtZTcwMDI1OTMzOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Shutter Island",
+				"Source": "http://ia.media-imdb.com/images/M/MV5BMTMxMTIyNzMxMV5BMl5BanBnXkFtZTcwOTc4OTI3Mg@@._V1_UX128_CR0,0,128,190_AL_.jpg"
+			}, {
+				"Title": "Blood Diamond",
+				"Source": "http://ia.media-imdb.com/images/M/MV5BMTY5MTYyNjkwNV5BMl5BanBnXkFtZTcwODE3MTI0MQ@@._V1_UY190_CR0,0,128,190_AL_.jpg"
+			}, {
+				"Title": "Catch Me If You Can",
+				"Source": "http://ia.media-imdb.com/images/M/MV5BMTY5MzYzNjc5NV5BMl5BanBnXkFtZTYwNTUyNTc2._V1_UY190_CR0,0,128,190_AL_.jpg"
+			}]
+		}, {
+			"Title": "Latest Best Picture-Winning Titles",
+			"Content": [{
+				"Title": "Spotlight",
+				"Source": "http://ia.media-imdb.com/images/M/MV5BMjIyOTM5OTIzNV5BMl5BanBnXkFtZTgwMDkzODE2NjE@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Birdman",
+				"Source": "http://ia.media-imdb.com/images/M/MV5BODAzNDMxMzAxOV5BMl5BanBnXkFtZTgwMDMxMjA4MjE@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "12 Years As A Slave",
+				"Source": "http://ia.media-imdb.com/images/M/MV5BMjExMTEzODkyN15BMl5BanBnXkFtZTcwNTU4NTc4OQ@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Argo",
+				"Source": "http://ia.media-imdb.com/images/M/MV5BMTc3MjI0MjM0NF5BMl5BanBnXkFtZTcwMTYxMTQ1OA@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "The Artist",
+				"Source": "http://ia.media-imdb.com/images/M/MV5BMzk0NzQxMTM0OV5BMl5BanBnXkFtZTcwMzU4MDYyNQ@@._V1_UY268_CR9,0,182,268_AL_.jpg"
+			}, {
+				"Title": "The King's Speech",
+				"Source": "http://ia.media-imdb.com/images/M/MV5BMzU5MjEwMTg2Nl5BMl5BanBnXkFtZTcwNzM3MTYxNA@@._V1_UY268_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "The Hurt Locker",
+				"Source": "http://ia.media-imdb.com/images/M/MV5BNzEwNzQ1NjczM15BMl5BanBnXkFtZTcwNTk3MTE1Mg@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Slumdog Millionaire",
+				"Source": "http://ia.media-imdb.com/images/M/MV5BMTU2NTA5NzI0N15BMl5BanBnXkFtZTcwMjUxMjYxMg@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "No Country For Old Men",
+				"Source": "http://ia.media-imdb.com/images/M/MV5BMjA5Njk3MjM4OV5BMl5BanBnXkFtZTcwMTc5MTE1MQ@@._V1_UY268_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "The Departed",
+				"Source": "http://ia.media-imdb.com/images/M/MV5BMTI1MTY2OTIxNV5BMl5BanBnXkFtZTYwNjQ4NjY3._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}]
+		}, {
+			"Title": "Sci-Fi Classic Titles",
+			"Content": [{
+				"Title": "Blade Runner",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BZWZlYmEyYTItNGRjYy00ZmMxLWEzMWItM2Q2NjZlNTMwMjQ3XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Back to the Future",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Back to the Future Part II",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTMxMGM5MjItNDJhNy00MWI2LWJlZWMtOWFhMjI5ZTQwMWM3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Back to the Future Part III",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk3ODgyMTgzNF5BMl5BanBnXkFtZTcwODE3MzYwMg@@._V1_UY268_CR7,0,182,268_AL_.jpg"
+			}, {
+				"Title": "The Terminator",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BODE1MDczNTUxOV5BMl5BanBnXkFtZTcwMTA0NDQyNA@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Terminator 2: Judgment Day",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BZDM2YjYwYWMtMWZlNi00ZDQxLWExMDctMDAzNzQ0OTkzZjljXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}]
+		}, {
+			"Title": "Sci-Fi Titles",
+			"Content": [{
+				"Title": "Mad Max: Fury Road",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUyMTE0ODcxNF5BMl5BanBnXkFtZTgwODE4NDQzNTE@._V1_UY268_CR1,0,182,268_AL_.jpg"
+			}, {
+				"Title": "The Martian",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc2MTQ3MDA1Nl5BMl5BanBnXkFtZTgwODA3OTI4NjE@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Limitless",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BYmViZGM0MGItZTdiYi00ZDU4LWIxNDYtNTc1NWQ5Njc2N2YwXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_UY268_CR2,0,182,268_AL_.jpg"
+			}, {
+				"Title": "TRON: Legacy",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk4NTk4MTk1OF5BMl5BanBnXkFtZTcwNTE2MDIwNA@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Gravity",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjE5MzYwMzYxMF5BMl5BanBnXkFtZTcwOTk4MTk0OQ@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Oblivion",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQwMDY0MTA4MF5BMl5BanBnXkFtZTcwNzI3MDgxOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Ghost In The Shell",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BM2NmZjQ4MjUtZGQ1YS00NjY0LTgzMDQtZjM4ZjJmMjNmZGY3XkEyXkFqcGdeQXVyNjA2MDM5MjU@._V1_UY268_CR120,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Elysium",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDc2NjU0MTcwNV5BMl5BanBnXkFtZTcwMjg4MDg2OQ@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Terminator Genisys",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM1NTc0NzE4OF5BMl5BanBnXkFtZTgwNDkyNjQ1NTE@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Looper",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3NTY0MjEwNV5BMl5BanBnXkFtZTcwNTE3NDA1OA@@._V1_UY268_CR12,0,182,268_AL_.jpg"
+			}]
+		}, {
+			"Title": "Marvel Universe Titles",
+			"Content": [{
+				"Title": "X-Men Origins: Wolverine",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BZWRhMzdhMzEtZTViNy00YWYyLTgxZmUtMTMwMWM0NTEyMjk3XkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Iron Man",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Iron Man 2",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTM0MDgwNjMyMl5BMl5BanBnXkFtZTcwNTg3NzAzMw@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Iron Man 3",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTkzMjEzMjY1M15BMl5BanBnXkFtZTcwNTMxOTYyOQ@@._V1_UY268_CR3,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Fantastic 4",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk0OTMyMDA0OF5BMl5BanBnXkFtZTgwMzY5NTkzNTE@._V1_UX182_CR0,0,182,268_AL_.jpg"
+			}, {
+				"Title": "Hulk",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQxNzUxNTE4Nl5BMl5BanBnXkFtZTYwMjcyNTk5._V1_UY268_CR4,0,182,268_AL_.jpg"
+			}, {
+				"Title": "The Incredible Hulk",
+				"Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUyNzk3MjA1OF5BMl5BanBnXkFtZTcwMTE1Njg2MQ@@._V1_UY190_CR0,0,128,190_AL_.jpg"
+			}]
+		}],
+
+		"HighlightMovieTitle": "The Wolf of Wall Street (2013)",
+		"HighlightMovieDescription": "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.",
+		"HighlightMovieImage": "http://ia.media-imdb.com/images/M/MV5BYWRhMjlmNGUtYTIwYS00OTYyLThjYmMtMTU2MWU3MmRhNGNkXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SY1000_SX1500_AL_.jpg"
+	},
+
+	"ProductsCatalogItemTemplate.xaml": {
+		"Name": "Logo Tee",
+		"Description": "Cotton blend lends for ultimate comfort.",
+		"Image": "product_item_0.jpg",
+		"Price": "$39",
+		"ThumbnailHeight": "100",
+		"Manufacturer": "UXdivers"
+	},
+
+	"DashboardVariantItemTemplate.xaml": {
+		"BackgroundColor": "#AAc01e5c",
+		"BackgroundImage": "dashboard_thumbnail_0.jpg",
+		"ShowBackgroundColor": "true",
+		"Icon": "\ue838",
+		"Title": "Dashboard Item"
+	},
+	"DashboardAppNotificationItemTemplate.xaml" : {
+		"BackgroundImage": "dashboard_thumbnail_0.jpg",
+		"ShowBackgroundColor": "true",
+		"Icon": "\ue944",
+		"Body": "Hey buddy :), what's up? I'm currently working on this amazing stuff called Grial. Have you heard about it? You shoud give it a try....it really rocks!!!!!.",
+		"Avatar": "friend_thumbnail_55.jpg",
+		"BackgroundColor": "#B31250",
+		"Title" : "Twitter"
+	}
+}

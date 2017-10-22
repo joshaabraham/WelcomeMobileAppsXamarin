@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CampusPageTitle" xml:space="preserve">
+    <value>Campus</value>
+  </data>
+  <data name="CitizenshipPageTitle" xml:space="preserve">
+    <value>Pays de citoyenneté</value>
+  </data>
+  <data name="EmailAgreeTitle" xml:space="preserve">
+    <value>Je consens à recevoir des messages électroniques (informations, invitations, offres, etc ...) de la part du Collège LaSalle et des campus du réseau  LCI Éducation. Sachant qu'Il m'est possible de retirer mon consentement à tout moment</value>
+  </data>
+  <data name="EmailEntryTitle" xml:space="preserve">
+    <value>Courriel</value>
+  </data>
+  <data name="EmailMainTitle" xml:space="preserve">
+    <value>Remplissez les champs suivants</value>
+  </data>
+  <data name="NamePageFirstNameTitle" xml:space="preserve">
+    <value>Prénom</value>
+  </data>
+  <data name="NamePageLastNameTitle" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="NamePageMainTitle" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="ObjectivePageTitle" xml:space="preserve">
+    <value>Objectif</value>
+  </data>
+  <data name="ProgramsPageTitle" xml:space="preserve">
+    <value>Programme</value>
+  </data>
+  <data name="ProgramsCategoryPrompt" xml:space="preserve">
+    <value>Sélectionnez une categorie de programme S'il vous plait</value>
+    <comment>This is a question prompted on the programs page</comment>
+  </data>
+  <data name="ProgramsCategoryPlaceholder" xml:space="preserve">
+    <value>Selectionnez une categorie</value>
+    <comment>This is a picker placeholder prompted on the programs page</comment>
+  </data>
+  <data name="TelephonePageHomePhoneTitle" xml:space="preserve">
+    <value>Résidence</value>
+  </data>
+  <data name="TelephonePageMainTitle" xml:space="preserve">
+    <value>Numéro de téléphone</value>
+  </data>
+  <data name="TelephonePageMobilePhoneTitle" xml:space="preserve">
+    <value>Cellulaire</value>
+  </data>
+  <data name="ThankYouPageSubTitleKiosk" xml:space="preserve">
+    <value>Je vous en prie, prenez place. Un conseiller sera avec vous sous peu.</value>
+  </data>
+  <data name="ThankYouPageSubTitleEvent" xml:space="preserve">
+    <value>Nous avons hâte de vous voir au College LaSalle</value>
+  </data>
+  <data name="ThankYouPageTitle" xml:space="preserve">
+    <value>Merci !</value>
+  </data>
+	  <data name="CampusPageError1" xml:space="preserve">
+    <value>* S'il vous plaît sélectionner un campus</value>
+  </data>
+  <data name="CampusPageError2" xml:space="preserve">
+    <value>* No Aucun campus trouve, Mettez a jour la base de donnees</value>
+  </data>
+  <data name="CitizenshipPageError1" xml:space="preserve">
+    <value>* S'il vous plaît sélectionner un citoyenneté</value>
+  </data>
+  <data name="CitizenshipPageError2" xml:space="preserve">
+    <value>* Aucun pays trouve, Mettez a jour la base de donnees</value>
+  </data>
+  <data name="CountriesSearchPlaceholder" xml:space="preserve">
+    <value>Chercher un pays</value>
+    <comment>This is a placeholder to search for Countries</comment>
+  </data>
+  <data name="EmailPageError1" xml:space="preserve">
+    <value>*Veuillez entrer une adresse courriel</value>
+  </data>
+  <data name="EmailPageError2" xml:space="preserve">
+    <value>*Veuillez entrer une adresse courriel valide</value>
+  </data>
+  <data name="NamePageError1" xml:space="preserve">
+    <value>* S'il vous plaît indiquez votre Nom et Prénom</value>
+  </data>
+  <data name="NamePageError2" xml:space="preserve">
+    <value>* S'il vous plaît utilisez seulement les caractères alphabétique</value>
+  </data>
+  <data name="ObjectivePageError1" xml:space="preserve">
+    <value>* S'il vous plaît sélectionner un objectif</value>
+  </data>
+  <data name="ProgramsPageError1" xml:space="preserve">
+    <value>* S'il vous plaît sélectionner une programme</value>
+  </data>
+  <data name="ProgramsPageError2" xml:space="preserve">
+    <value>* Aucun programmes trouve, Mettez a jour la base de donnees</value>
+  </data>
+  <data name="TelephonePageError1" xml:space="preserve">
+    <value>* S'il vous plait entrez au moins un numero de telephone</value>
+  </data>
+  <data name="TelephonePageError2" xml:space="preserve">
+    <value>* S'il vous plait entrez un numéro de téléphone valide.</value>
+  </data>
+</root>
